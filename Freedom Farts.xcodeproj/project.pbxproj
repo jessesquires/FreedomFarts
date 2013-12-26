@@ -1,492 +1,1131 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
-		88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDC186CBF85001FC35E /* CoreGraphics.framework */; };
-		88F86EDF186CBF85001FC35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDE186CBF85001FC35E /* UIKit.framework */; };
-		88F86EE5186CBF85001FC35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EE3186CBF85001FC35E /* InfoPlist.strings */; };
-		88F86EE7186CBF85001FC35E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86EE6186CBF85001FC35E /* main.m */; };
-		88F86EEB186CBF85001FC35E /* FFXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */; };
-		88F86EEE186CBF85001FC35E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EEC186CBF85001FC35E /* Main_iPhone.storyboard */; };
-		88F86EF1186CBF85001FC35E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EEF186CBF85001FC35E /* Main_iPad.storyboard */; };
-		88F86EF4186CBF85001FC35E /* FFXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86EF3186CBF85001FC35E /* FFXViewController.m */; };
-		88F86EF6186CBF85001FC35E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EF5186CBF85001FC35E /* Images.xcassets */; };
-		88F86EFD186CBF85001FC35E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EFC186CBF85001FC35E /* XCTest.framework */; };
-		88F86EFE186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
-		88F86EFF186CBF85001FC35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDE186CBF85001FC35E /* UIKit.framework */; };
-		88F86F07186CBF85001FC35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F05186CBF85001FC35E /* InfoPlist.strings */; };
-		88F86F09186CBF85001FC35E /* Freedom_FartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86F08186CBF85001FC35E /* Freedom_FartsTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		88F86F00186CBF85001FC35E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F86ECF186CBF85001FC35E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88F86ED6186CBF85001FC35E;
-			remoteInfo = "Freedom Farts";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		88F86ED7186CBF85001FC35E /* Freedom Farts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freedom Farts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F86EDA186CBF85001FC35E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		88F86EDC186CBF85001FC35E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		88F86EDE186CBF85001FC35E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		88F86EE2186CBF85001FC35E /* Freedom Farts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freedom Farts-Info.plist"; sourceTree = "<group>"; };
-		88F86EE4186CBF85001FC35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88F86EE6186CBF85001FC35E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88F86EE8186CBF85001FC35E /* Freedom Farts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Freedom Farts-Prefix.pch"; sourceTree = "<group>"; };
-		88F86EE9186CBF85001FC35E /* FFXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFXAppDelegate.h; sourceTree = "<group>"; };
-		88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFXAppDelegate.m; sourceTree = "<group>"; };
-		88F86EED186CBF85001FC35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		88F86EF0186CBF85001FC35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		88F86EF2186CBF85001FC35E /* FFXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFXViewController.h; sourceTree = "<group>"; };
-		88F86EF3186CBF85001FC35E /* FFXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFXViewController.m; sourceTree = "<group>"; };
-		88F86EF5186CBF85001FC35E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		88F86EFB186CBF85001FC35E /* Freedom FartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Freedom FartsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F86EFC186CBF85001FC35E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		88F86F04186CBF85001FC35E /* Freedom FartsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freedom FartsTests-Info.plist"; sourceTree = "<group>"; };
-		88F86F06186CBF85001FC35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88F86F08186CBF85001FC35E /* Freedom_FartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Freedom_FartsTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		88F86ED4186CBF85001FC35E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */,
-				88F86EDF186CBF85001FC35E /* UIKit.framework in Frameworks */,
-				88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88F86EF8186CBF85001FC35E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86EFD186CBF85001FC35E /* XCTest.framework in Frameworks */,
-				88F86EFF186CBF85001FC35E /* UIKit.framework in Frameworks */,
-				88F86EFE186CBF85001FC35E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		88F86ECE186CBF85001FC35E = {
-			isa = PBXGroup;
-			children = (
-				88F86EE0186CBF85001FC35E /* Freedom Farts */,
-				88F86F02186CBF85001FC35E /* Freedom FartsTests */,
-				88F86ED9186CBF85001FC35E /* Frameworks */,
-				88F86ED8186CBF85001FC35E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		88F86ED8186CBF85001FC35E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				88F86ED7186CBF85001FC35E /* Freedom Farts.app */,
-				88F86EFB186CBF85001FC35E /* Freedom FartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		88F86ED9186CBF85001FC35E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				88F86EDA186CBF85001FC35E /* Foundation.framework */,
-				88F86EDC186CBF85001FC35E /* CoreGraphics.framework */,
-				88F86EDE186CBF85001FC35E /* UIKit.framework */,
-				88F86EFC186CBF85001FC35E /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		88F86EE0186CBF85001FC35E /* Freedom Farts */ = {
-			isa = PBXGroup;
-			children = (
-				88F86EE9186CBF85001FC35E /* FFXAppDelegate.h */,
-				88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */,
-				88F86EEC186CBF85001FC35E /* Main_iPhone.storyboard */,
-				88F86EEF186CBF85001FC35E /* Main_iPad.storyboard */,
-				88F86EF2186CBF85001FC35E /* FFXViewController.h */,
-				88F86EF3186CBF85001FC35E /* FFXViewController.m */,
-				88F86EF5186CBF85001FC35E /* Images.xcassets */,
-				88F86EE1186CBF85001FC35E /* Supporting Files */,
-			);
-			path = "Freedom Farts";
-			sourceTree = "<group>";
-		};
-		88F86EE1186CBF85001FC35E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88F86EE2186CBF85001FC35E /* Freedom Farts-Info.plist */,
-				88F86EE3186CBF85001FC35E /* InfoPlist.strings */,
-				88F86EE6186CBF85001FC35E /* main.m */,
-				88F86EE8186CBF85001FC35E /* Freedom Farts-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88F86F02186CBF85001FC35E /* Freedom FartsTests */ = {
-			isa = PBXGroup;
-			children = (
-				88F86F08186CBF85001FC35E /* Freedom_FartsTests.m */,
-				88F86F03186CBF85001FC35E /* Supporting Files */,
-			);
-			path = "Freedom FartsTests";
-			sourceTree = "<group>";
-		};
-		88F86F03186CBF85001FC35E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88F86F04186CBF85001FC35E /* Freedom FartsTests-Info.plist */,
-				88F86F05186CBF85001FC35E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		88F86ED6186CBF85001FC35E /* Freedom Farts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88F86F0C186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom Farts" */;
-			buildPhases = (
-				88F86ED3186CBF85001FC35E /* Sources */,
-				88F86ED4186CBF85001FC35E /* Frameworks */,
-				88F86ED5186CBF85001FC35E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Freedom Farts";
-			productName = "Freedom Farts";
-			productReference = 88F86ED7186CBF85001FC35E /* Freedom Farts.app */;
-			productType = "com.apple.product-type.application";
-		};
-		88F86EFA186CBF85001FC35E /* Freedom FartsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88F86F0F186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom FartsTests" */;
-			buildPhases = (
-				88F86EF7186CBF85001FC35E /* Sources */,
-				88F86EF8186CBF85001FC35E /* Frameworks */,
-				88F86EF9186CBF85001FC35E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				88F86F01186CBF85001FC35E /* PBXTargetDependency */,
-			);
-			name = "Freedom FartsTests";
-			productName = "Freedom FartsTests";
-			productReference = 88F86EFB186CBF85001FC35E /* Freedom FartsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		88F86ECF186CBF85001FC35E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = FFX;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Hexed Bits";
-				TargetAttributes = {
-					88F86EFA186CBF85001FC35E = {
-						TestTargetID = 88F86ED6186CBF85001FC35E;
-					};
-				};
-			};
-			buildConfigurationList = 88F86ED2186CBF85001FC35E /* Build configuration list for PBXProject "Freedom Farts" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 88F86ECE186CBF85001FC35E;
-			productRefGroup = 88F86ED8186CBF85001FC35E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				88F86ED6186CBF85001FC35E /* Freedom Farts */,
-				88F86EFA186CBF85001FC35E /* Freedom FartsTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		88F86ED5186CBF85001FC35E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86EF1186CBF85001FC35E /* Main_iPad.storyboard in Resources */,
-				88F86EF6186CBF85001FC35E /* Images.xcassets in Resources */,
-				88F86EEE186CBF85001FC35E /* Main_iPhone.storyboard in Resources */,
-				88F86EE5186CBF85001FC35E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88F86EF9186CBF85001FC35E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86F07186CBF85001FC35E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		88F86ED3186CBF85001FC35E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86EF4186CBF85001FC35E /* FFXViewController.m in Sources */,
-				88F86EE7186CBF85001FC35E /* main.m in Sources */,
-				88F86EEB186CBF85001FC35E /* FFXAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88F86EF7186CBF85001FC35E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86F09186CBF85001FC35E /* Freedom_FartsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		88F86F01186CBF85001FC35E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 88F86ED6186CBF85001FC35E /* Freedom Farts */;
-			targetProxy = 88F86F00186CBF85001FC35E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		88F86EE3186CBF85001FC35E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86EE4186CBF85001FC35E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		88F86EEC186CBF85001FC35E /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86EED186CBF85001FC35E /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		88F86EEF186CBF85001FC35E /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86EF0186CBF85001FC35E /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		88F86F05186CBF85001FC35E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86F06186CBF85001FC35E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		88F86F0A186CBF85001FC35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		88F86F0B186CBF85001FC35E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		88F86F0D186CBF85001FC35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				INFOPLIST_FILE = "Freedom Farts/Freedom Farts-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		88F86F0E186CBF85001FC35E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				INFOPLIST_FILE = "Freedom Farts/Freedom Farts-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		88F86F10186CBF85001FC35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Freedom FartsTests/Freedom FartsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		88F86F11186CBF85001FC35E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				INFOPLIST_FILE = "Freedom FartsTests/Freedom FartsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		88F86ED2186CBF85001FC35E /* Build configuration list for PBXProject "Freedom Farts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88F86F0A186CBF85001FC35E /* Debug */,
-				88F86F0B186CBF85001FC35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88F86F0C186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom Farts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88F86F0D186CBF85001FC35E /* Debug */,
-				88F86F0E186CBF85001FC35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88F86F0F186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom FartsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88F86F10186CBF85001FC35E /* Debug */,
-				88F86F11186CBF85001FC35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 88F86ECF186CBF85001FC35E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>06E9FE680E5E4C6BB49682EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15BEB5205ED14F1DAECAD84B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C64CE0508C8743EE9C99C0B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>353BE2BA028148FA88E8360D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ECE186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE0186CBF85001FC35E</string>
+				<string>88F86F02186CBF85001FC35E</string>
+				<string>88F86ED9186CBF85001FC35E</string>
+				<string>88F86ED8186CBF85001FC35E</string>
+				<string>06E9FE680E5E4C6BB49682EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86ECF186CBF85001FC35E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>FFX</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Hexed Bits</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>88F86EFA186CBF85001FC35E</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>88F86ED6186CBF85001FC35E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>88F86ED2186CBF85001FC35E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>88F86ECE186CBF85001FC35E</string>
+			<key>productRefGroup</key>
+			<string>88F86ED8186CBF85001FC35E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>88F86ED6186CBF85001FC35E</string>
+				<string>88F86EFA186CBF85001FC35E</string>
+			</array>
+		</dict>
+		<key>88F86ED2186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88F86F0A186CBF85001FC35E</string>
+				<string>88F86F0B186CBF85001FC35E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88F86ED3186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86EF4186CBF85001FC35E</string>
+				<string>88F86EE7186CBF85001FC35E</string>
+				<string>88F86EEB186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ED4186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86EDD186CBF85001FC35E</string>
+				<string>88F86EDF186CBF85001FC35E</string>
+				<string>88F86EDB186CBF85001FC35E</string>
+				<string>15BEB5205ED14F1DAECAD84B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ED5186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86EF1186CBF85001FC35E</string>
+				<string>88F86EF6186CBF85001FC35E</string>
+				<string>88F86EEE186CBF85001FC35E</string>
+				<string>88F86EE5186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ED6186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>88F86F0C186CBF85001FC35E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>353BE2BA028148FA88E8360D</string>
+				<string>88F86ED3186CBF85001FC35E</string>
+				<string>88F86ED4186CBF85001FC35E</string>
+				<string>88F86ED5186CBF85001FC35E</string>
+				<string>DCFBD318ED15448EB995809C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Freedom Farts</string>
+			<key>productName</key>
+			<string>Freedom Farts</string>
+			<key>productReference</key>
+			<string>88F86ED7186CBF85001FC35E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>88F86ED7186CBF85001FC35E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Freedom Farts.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>88F86ED8186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86ED7186CBF85001FC35E</string>
+				<string>88F86EFB186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86ED9186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EDA186CBF85001FC35E</string>
+				<string>88F86EDC186CBF85001FC35E</string>
+				<string>88F86EDE186CBF85001FC35E</string>
+				<string>88F86EFC186CBF85001FC35E</string>
+				<string>C64CE0508C8743EE9C99C0B8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EDA186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88F86EDB186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDA186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EDC186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88F86EDD186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDC186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EDE186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88F86EDF186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDE186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EE0186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE9186CBF85001FC35E</string>
+				<string>88F86EEA186CBF85001FC35E</string>
+				<string>88F86EEC186CBF85001FC35E</string>
+				<string>88F86EEF186CBF85001FC35E</string>
+				<string>88F86EF2186CBF85001FC35E</string>
+				<string>88F86EF3186CBF85001FC35E</string>
+				<string>88F86EF5186CBF85001FC35E</string>
+				<string>88F86EE1186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Freedom Farts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE1186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE2186CBF85001FC35E</string>
+				<string>88F86EE3186CBF85001FC35E</string>
+				<string>88F86EE6186CBF85001FC35E</string>
+				<string>88F86EE8186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE2186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Freedom Farts-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE3186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE4186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE4186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE5186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EE3186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EE6186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE7186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EE6186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EE8186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Freedom Farts-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE9186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FFXAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EEA186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FFXAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EEB186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EEA186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EEC186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EED186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EED186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EEE186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EEC186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EEF186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EF0186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF0186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF1186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EEF186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EF2186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FFXViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF3186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FFXViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF4186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EF3186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EF5186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF6186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EF5186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EF7186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86F09186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86EF8186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86EFD186CBF85001FC35E</string>
+				<string>88F86EFF186CBF85001FC35E</string>
+				<string>88F86EFE186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86EF9186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86F07186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86EFA186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>88F86F0F186CBF85001FC35E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>88F86EF7186CBF85001FC35E</string>
+				<string>88F86EF8186CBF85001FC35E</string>
+				<string>88F86EF9186CBF85001FC35E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>88F86F01186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Freedom FartsTests</string>
+			<key>productName</key>
+			<string>Freedom FartsTests</string>
+			<key>productReference</key>
+			<string>88F86EFB186CBF85001FC35E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>88F86EFB186CBF85001FC35E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Freedom FartsTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>88F86EFC186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>88F86EFD186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EFC186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EFE186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDA186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EFF186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDE186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F00186CBF85001FC35E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>88F86ECF186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>88F86ED6186CBF85001FC35E</string>
+			<key>remoteInfo</key>
+			<string>Freedom Farts</string>
+		</dict>
+		<key>88F86F01186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>88F86ED6186CBF85001FC35E</string>
+			<key>targetProxy</key>
+			<string>88F86F00186CBF85001FC35E</string>
+		</dict>
+		<key>88F86F02186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86F08186CBF85001FC35E</string>
+				<string>88F86F03186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Freedom FartsTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F03186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86F04186CBF85001FC35E</string>
+				<string>88F86F05186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F04186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Freedom FartsTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F05186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86F06186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F06186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F07186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F05186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F08186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Freedom_FartsTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F09186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F08186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F0A186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88F86F0B186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88F86F0C186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88F86F0D186CBF85001FC35E</string>
+				<string>88F86F0E186CBF85001FC35E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88F86F0D186CBF85001FC35E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>06E9FE680E5E4C6BB49682EE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom Farts/Freedom Farts-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88F86F0E186CBF85001FC35E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>06E9FE680E5E4C6BB49682EE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom Farts/Freedom Farts-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88F86F0F186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88F86F10186CBF85001FC35E</string>
+				<string>88F86F11186CBF85001FC35E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88F86F10186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom FartsTests/Freedom FartsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88F86F11186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom FartsTests/Freedom FartsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C64CE0508C8743EE9C99C0B8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DCFBD318ED15448EB995809C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>88F86ECF186CBF85001FC35E</string>
+</dict>
+</plist>
