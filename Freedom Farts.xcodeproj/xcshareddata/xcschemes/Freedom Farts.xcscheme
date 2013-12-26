@@ -28,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88F86EFA186CBF85001FC35E"
-               BuildableName = "Freedom FartsTests.xctest"
-               BlueprintName = "Freedom FartsTests"
-               ReferencedContainer = "container:Freedom Farts.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

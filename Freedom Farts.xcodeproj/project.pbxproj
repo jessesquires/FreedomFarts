@@ -475,6 +475,7 @@
 				88F86F0E186CBF85001FC35E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88F86F0F186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom FartsTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				88F86F11186CBF85001FC35E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

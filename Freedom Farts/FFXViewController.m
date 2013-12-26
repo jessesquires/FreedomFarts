@@ -1,9 +1,11 @@
 //
-//  FFXViewController.m
-//  Freedom Farts
+//  Created by Jesse Squires
+//  http://www.hexedbits.com
 //
-//  Created by Jesse Squires on 12/26/13.
-//  Copyright (c) 2013 Hexed Bits. All rights reserved.
+//
+//  The MIT License
+//  Copyright (c) 2012 Jesse Squires
+//  http://opensource.org/licenses/MIT
 //
 
 #import "FFXViewController.h"
@@ -12,18 +14,13 @@
 
 @end
 
+
+
 @implementation FFXViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
