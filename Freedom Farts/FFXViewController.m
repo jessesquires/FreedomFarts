@@ -9,6 +9,7 @@
 //
 
 #import "FFXViewController.h"
+#import <JSQSystemSoundPlayer/JSQSystemSoundPlayer.h>
 
 @interface FFXViewController ()
 
@@ -21,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Freedom Farts";
 }
 
 @end

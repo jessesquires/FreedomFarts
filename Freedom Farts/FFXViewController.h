@@ -9,6 +9,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BButton/BButton.h>
 
 @interface FFXViewController : UIViewController
 
