@@ -26,6 +26,9 @@
                                 <state key="normal" title="Vote!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="votePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N0z-O6-zVa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r4-Nd-Cb5" customClass="BButton">
                                 <rect key="frame" x="50" y="141" width="220" height="35"/>
@@ -37,6 +40,9 @@
                                 <state key="normal" title="Fart Spangled Banner">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Pm-FE-4n2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct0-Re-RXf" customClass="BButton">
                                 <rect key="frame" x="50" y="196" width="220" height="35"/>
@@ -48,6 +54,9 @@
                                 <state key="normal" title="America, the Fart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="asS-Z0-JbA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-xH-skd" customClass="BButton">
                                 <rect key="frame" x="50" y="251" width="220" height="35"/>
@@ -59,6 +68,9 @@
                                 <state key="normal" title="My Fart, Tis of Thee">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p3t-7A-H9D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVd-8H-VGe" customClass="BButton">
                                 <rect key="frame" x="50" y="306" width="220" height="35"/>
@@ -70,6 +82,9 @@
                                 <state key="normal" title="Battle Farts of the Republic">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4m3-Yt-YVc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-zi-wPZ" customClass="BButton">
                                 <rect key="frame" x="50" y="361" width="220" height="35"/>
@@ -81,6 +96,9 @@
                                 <state key="normal" title="God Fart America">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uDb-OO-Qrk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXv-ZB-TJ9" customClass="BButton">
                                 <rect key="frame" x="50" y="416" width="220" height="35"/>
@@ -92,6 +110,9 @@
                                 <state key="normal" title="Yankee Farter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fartPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rBf-VJ-7Bb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -113,6 +134,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vcp-sG-Icw"/>
+                    <connections>
+                        <outlet property="fartButton0" destination="4r4-Nd-Cb5" id="Aqx-be-5bx"/>
+                        <outlet property="fartButton1" destination="Ct0-Re-RXf" id="Z9T-zR-SXV"/>
+                        <outlet property="fartButton2" destination="FaE-xH-skd" id="UU1-i4-m7c"/>
+                        <outlet property="fartButton3" destination="aVd-8H-VGe" id="L1f-Ft-zRY"/>
+                        <outlet property="fartButton4" destination="EDc-zi-wPZ" id="W3w-1Q-8PN"/>
+                        <outlet property="fartButton5" destination="ZXv-ZB-TJ9" id="ahl-ac-dCa"/>
+                        <outlet property="voteButton" destination="WuW-fO-Bj6" id="9MZ-aa-Khe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

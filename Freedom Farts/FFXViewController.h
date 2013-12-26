@@ -13,4 +13,15 @@
 
 @interface FFXViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet BButton *voteButton;
+@property (weak, nonatomic) IBOutlet BButton *fartButton0;
+@property (weak, nonatomic) IBOutlet BButton *fartButton1;
+@property (weak, nonatomic) IBOutlet BButton *fartButton2;
+@property (weak, nonatomic) IBOutlet BButton *fartButton3;
+@property (weak, nonatomic) IBOutlet BButton *fartButton4;
+@property (weak, nonatomic) IBOutlet BButton *fartButton5;
+
+- (IBAction)votePressed:(UIButton *)sender;
+- (IBAction)fartPressed:(UIButton *)sender;
+
 @end
