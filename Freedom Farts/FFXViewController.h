@@ -9,11 +9,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <BButton/BButton.h>
+
+@class SAMGradientView, BButton;
 
 @interface FFXViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet SAMGradientView *gradientView;
+
 @property (weak, nonatomic) IBOutlet BButton *voteButton;
+
 @property (weak, nonatomic) IBOutlet BButton *fartButton0;
 @property (weak, nonatomic) IBOutlet BButton *fartButton1;
 @property (weak, nonatomic) IBOutlet BButton *fartButton2;

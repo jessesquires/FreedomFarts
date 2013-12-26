@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="DiY-DK-dxB"/>
                         <viewControllerLayoutGuide type="bottom" id="CRf-nT-n8M"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="SAMGradientView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -141,6 +141,7 @@
                         <outlet property="fartButton3" destination="aVd-8H-VGe" id="L1f-Ft-zRY"/>
                         <outlet property="fartButton4" destination="EDc-zi-wPZ" id="W3w-1Q-8PN"/>
                         <outlet property="fartButton5" destination="ZXv-ZB-TJ9" id="ahl-ac-dCa"/>
+                        <outlet property="gradientView" destination="kh9-bI-dsS" id="iXw-Ja-02q"/>
                         <outlet property="voteButton" destination="WuW-fO-Bj6" id="9MZ-aa-Khe"/>
                     </connections>
                 </viewController>

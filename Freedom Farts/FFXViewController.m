@@ -10,6 +10,8 @@
 
 #import "FFXViewController.h"
 #import <JSQSystemSoundPlayer/JSQSystemSoundPlayer.h>
+#import <BButton/BButton.h>
+#import <SAMGradientView/SAMGradientView.h>
 
 @interface FFXViewController ()
 
@@ -27,18 +29,16 @@
     
     self.title = @"Freedom Farts";
     
-    [self.voteButton setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
-    
-    [self.fartButton0 setType:BButtonTypeDanger];
-    [self.fartButton1 setType:BButtonTypeDanger];
-    [self.fartButton2 setType:BButtonTypeDanger];
-    [self.fartButton3 setType:BButtonTypeDanger];
-    [self.fartButton4 setType:BButtonTypeDanger];
-    [self.fartButton5 setType:BButtonTypeDanger];
+    self.gradientView.gradientColors = @[
+                                         [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f],
+                                         [UIColor colorWithRed:0.18f green:0.67f blue:0.84f alpha:1.0f],
+                                         [UIColor colorWithRed:0.0f green:0.49f blue:0.96f alpha:1.0f]
+                                         ];
     
     for (UIView *eachView in self.view.subviews) {
         if ([eachView isKindOfClass:[BButton class]]) {
             BButton *btn = (BButton *)eachView;
+            [btn setType:BButtonTypeDanger];
             
             if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
                 btn.titleLabel.font = [UIFont systemFontOfSize:24.0f];
@@ -48,6 +48,8 @@
             }
         }
     }
+    
+    [self.voteButton setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
 }
 
 #pragma mark - Actions
