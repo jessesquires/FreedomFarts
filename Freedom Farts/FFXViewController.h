@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet BButton *fartButton5;
 
 - (IBAction)votePressed:(UIButton *)sender;
+
 - (IBAction)fartPressed:(UIButton *)sender;
 
 @end

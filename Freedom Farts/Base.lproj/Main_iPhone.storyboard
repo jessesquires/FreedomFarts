@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="height" constant="35" id="SXN-Q3-UxA"/>
                                     <constraint firstAttribute="width" constant="220" id="mmH-64-tqK"/>
                                 </constraints>
-                                <state key="normal" title="America, the Fart">
+                                <state key="normal" title="America the Fart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -65,7 +65,7 @@
                                     <constraint firstAttribute="width" constant="220" id="K30-hv-Nve"/>
                                     <constraint firstAttribute="height" constant="35" id="lgH-Bn-RB2"/>
                                 </constraints>
-                                <state key="normal" title="My Fart, Tis of Thee">
+                                <state key="normal" title="My Fart Tis of Thee">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
