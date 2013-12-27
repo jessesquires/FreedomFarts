@@ -32,9 +32,8 @@
     [super viewDidLoad];
     
     self.gradientView.gradientColors = @[
-                                         [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f],
-                                         [UIColor colorWithRed:0.18f green:0.67f blue:0.84f alpha:1.0f],
-                                         [UIColor colorWithRed:0.0f green:0.49f blue:0.96f alpha:1.0f]
+                                         [UIColor ffx_lightBlueColor],
+                                         [UIColor ffx_mediumBlueColor]
                                          ];
     
     self.buttons = [self.view.subviews filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
