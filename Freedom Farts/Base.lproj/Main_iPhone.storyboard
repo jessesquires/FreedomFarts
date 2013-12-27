@@ -16,22 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuW-fO-Bj6" customClass="BButton">
-                                <rect key="frame" x="50" y="86" width="220" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="lST-Tu-Uyq"/>
-                                    <constraint firstAttribute="width" constant="220" id="pVl-H7-d7C"/>
-                                </constraints>
-                                <state key="normal" title="Vote!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="votePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N0z-O6-zVa"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r4-Nd-Cb5" customClass="BButton">
-                                <rect key="frame" x="50" y="141" width="220" height="35"/>
+                                <rect key="frame" x="50" y="129" width="220" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="CiS-4C-yVv"/>
@@ -45,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct0-Re-RXf" customClass="BButton">
-                                <rect key="frame" x="50" y="196" width="220" height="35"/>
+                                <rect key="frame" x="50" y="184" width="220" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="SXN-Q3-UxA"/>
@@ -59,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-xH-skd" customClass="BButton">
-                                <rect key="frame" x="50" y="251" width="220" height="35"/>
+                                <rect key="frame" x="50" y="239" width="220" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="K30-hv-Nve"/>
@@ -73,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVd-8H-VGe" customClass="BButton">
-                                <rect key="frame" x="50" y="306" width="220" height="35"/>
+                                <rect key="frame" x="50" y="294" width="220" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Di0-me-0Pk"/>
@@ -87,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-zi-wPZ" customClass="BButton">
-                                <rect key="frame" x="50" y="361" width="220" height="35"/>
+                                <rect key="frame" x="50" y="349" width="220" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="GFQ-56-dSM"/>
@@ -101,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXv-ZB-TJ9" customClass="BButton">
-                                <rect key="frame" x="50" y="416" width="220" height="35"/>
+                                <rect key="frame" x="50" y="404" width="220" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="cHK-nW-Wpt"/>
@@ -122,13 +108,11 @@
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="FaE-xH-skd" secondAttribute="leading" id="Bcy-Ke-cza"/>
                             <constraint firstItem="EDc-zi-wPZ" firstAttribute="top" secondItem="aVd-8H-VGe" secondAttribute="bottom" constant="20" id="I0C-Rv-p9b"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="leading" secondItem="EDc-zi-wPZ" secondAttribute="leading" id="KXM-Ao-hkQ"/>
-                            <constraint firstItem="WuW-fO-Bj6" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="ZvF-Ma-Z99"/>
+                            <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="65" id="LMP-o4-klU"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="b5v-Fc-8RB"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cmH-mM-JC7"/>
-                            <constraint firstItem="WuW-fO-Bj6" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="22" id="gBe-ct-q7I"/>
                             <constraint firstItem="FaE-xH-skd" firstAttribute="top" secondItem="Ct0-Re-RXf" secondAttribute="bottom" constant="20" id="gNI-bM-pQt"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="top" secondItem="4r4-Nd-Cb5" secondAttribute="bottom" constant="20" id="tVh-Qh-z4I"/>
-                            <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="WuW-fO-Bj6" secondAttribute="bottom" constant="20" id="uFM-ea-a55"/>
                             <constraint firstItem="ZXv-ZB-TJ9" firstAttribute="top" secondItem="EDc-zi-wPZ" secondAttribute="bottom" constant="20" id="xj0-z7-CSS"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="top" secondItem="FaE-xH-skd" secondAttribute="bottom" constant="20" id="zuJ-lL-Qfq"/>
                         </constraints>
@@ -142,7 +126,6 @@
                         <outlet property="fartButton4" destination="EDc-zi-wPZ" id="W3w-1Q-8PN"/>
                         <outlet property="fartButton5" destination="ZXv-ZB-TJ9" id="ahl-ac-dCa"/>
                         <outlet property="gradientView" destination="kh9-bI-dsS" id="iXw-Ja-02q"/>
-                        <outlet property="voteButton" destination="WuW-fO-Bj6" id="9MZ-aa-Khe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

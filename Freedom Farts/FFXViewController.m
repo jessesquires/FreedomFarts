@@ -48,16 +48,9 @@
             }
         }
     }
-    
-    [self.voteButton setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
 }
 
 #pragma mark - Actions
-
-- (IBAction)votePressed:(UIButton *)sender
-{
-    
-}
 
 - (IBAction)fartPressed:(UIButton *)sender
 {

@@ -16,22 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slj-SE-Hpf" customClass="BButton">
-                                <rect key="frame" x="184" y="132" width="400" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="1Xt-TE-SaD"/>
-                                    <constraint firstAttribute="width" constant="400" id="vdF-XS-aiZ"/>
-                                </constraints>
-                                <state key="normal" title="Vote!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="votePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2Q-Pd-aSu"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-Kw-rIO" customClass="BButton">
-                                <rect key="frame" x="184" y="252" width="400" height="70"/>
+                                <rect key="frame" x="184" y="147" width="400" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="k7h-g0-mfr"/>
@@ -45,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFW-JS-SGW" customClass="BButton">
-                                <rect key="frame" x="184" y="372" width="400" height="70"/>
+                                <rect key="frame" x="184" y="267" width="400" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="L1B-gu-nbm"/>
@@ -59,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1g-7W-NMU" customClass="BButton">
-                                <rect key="frame" x="184" y="492" width="400" height="70"/>
+                                <rect key="frame" x="184" y="387" width="400" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Htm-Li-tQJ"/>
@@ -73,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgS-BP-BWI" customClass="BButton">
-                                <rect key="frame" x="184" y="612" width="400" height="70"/>
+                                <rect key="frame" x="184" y="507" width="400" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="MQP-zF-S9d"/>
@@ -87,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okL-zd-sYs" customClass="BButton">
-                                <rect key="frame" x="184" y="732" width="400" height="70"/>
+                                <rect key="frame" x="184" y="627" width="400" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="isj-l3-vub"/>
@@ -101,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNf-dd-mh2" customClass="BButton">
-                                <rect key="frame" x="184" y="852" width="400" height="70"/>
+                                <rect key="frame" x="184" y="747" width="400" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="8se-GK-y2V"/>
@@ -117,13 +103,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="slj-SE-Hpf" firstAttribute="leading" secondItem="ClK-Kw-rIO" secondAttribute="leading" id="29i-8m-zOV"/>
                             <constraint firstItem="gFW-JS-SGW" firstAttribute="leading" secondItem="ClK-Kw-rIO" secondAttribute="leading" id="7G4-JH-dBl"/>
                             <constraint firstItem="gFW-JS-SGW" firstAttribute="top" secondItem="ClK-Kw-rIO" secondAttribute="bottom" constant="50" id="7ao-Ap-cs9"/>
                             <constraint firstItem="gFW-JS-SGW" firstAttribute="leading" secondItem="f1g-7W-NMU" secondAttribute="leading" id="BFm-jz-Boz"/>
                             <constraint firstItem="okL-zd-sYs" firstAttribute="leading" secondItem="aNf-dd-mh2" secondAttribute="leading" id="EGH-OX-6iV"/>
-                            <constraint firstItem="slj-SE-Hpf" firstAttribute="top" secondItem="1Pf-wW-9f6" secondAttribute="bottom" constant="68" id="Ief-Yc-Uj2"/>
-                            <constraint firstItem="ClK-Kw-rIO" firstAttribute="top" secondItem="slj-SE-Hpf" secondAttribute="bottom" constant="50" id="LEB-pt-wOn"/>
+                            <constraint firstItem="ClK-Kw-rIO" firstAttribute="top" secondItem="1Pf-wW-9f6" secondAttribute="bottom" constant="83" id="LGX-eH-FL7"/>
                             <constraint firstItem="okL-zd-sYs" firstAttribute="top" secondItem="PgS-BP-BWI" secondAttribute="bottom" constant="50" id="Mtx-Nt-LJ0"/>
                             <constraint firstItem="aNf-dd-mh2" firstAttribute="top" secondItem="okL-zd-sYs" secondAttribute="bottom" constant="50" id="WqW-xR-yqr"/>
                             <constraint firstItem="PgS-BP-BWI" firstAttribute="leading" secondItem="okL-zd-sYs" secondAttribute="leading" id="X3p-JV-GAa"/>
@@ -142,7 +126,6 @@
                         <outlet property="fartButton4" destination="okL-zd-sYs" id="Nip-8d-lHN"/>
                         <outlet property="fartButton5" destination="aNf-dd-mh2" id="R7I-Hg-9uL"/>
                         <outlet property="gradientView" destination="8bC-Xf-vdC" id="4Ol-qp-Jmu"/>
-                        <outlet property="voteButton" destination="slj-SE-Hpf" id="6mm-Lt-9Pz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
