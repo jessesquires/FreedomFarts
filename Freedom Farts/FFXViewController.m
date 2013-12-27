@@ -15,6 +15,8 @@
 
 @interface FFXViewController ()
 
+@property (copy, nonatomic) NSArray *buttons;
+
 @end
 
 
@@ -35,19 +37,19 @@
                                          [UIColor colorWithRed:0.0f green:0.49f blue:0.96f alpha:1.0f]
                                          ];
     
-    for (UIView *eachView in self.view.subviews) {
-        if ([eachView isKindOfClass:[BButton class]]) {
-            BButton *btn = (BButton *)eachView;
-            [btn setType:BButtonTypeDanger];
-            
-            if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-                btn.titleLabel.font = [UIFont systemFontOfSize:24.0f];
-            }
-            else {
-                btn.titleLabel.font = [UIFont systemFontOfSize:12.0f];
-            }
-        }
+    self.buttons = [self.view.subviews filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        return [evaluatedObject isKindOfClass:[BButton class]];
+    }]];
+    
+    for (BButton *eachBtn in self.buttons) {
+        [eachBtn setType:BButtonTypeDanger];
     }
+}
+
+- (void)dealloc
+{
+    _gradientView = nil;
+    _buttons = nil;
 }
 
 #pragma mark - Actions

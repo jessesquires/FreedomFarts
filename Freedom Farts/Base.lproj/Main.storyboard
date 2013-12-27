@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r4-Nd-Cb5" customClass="BButton">
-                                <rect key="frame" x="50" y="129" width="220" height="35"/>
+                                <rect key="frame" x="50" y="92" width="220" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="CiS-4C-yVv"/>
-                                    <constraint firstAttribute="height" constant="35" id="tgP-ap-84N"/>
+                                    <constraint firstAttribute="height" constant="36" id="tgP-ap-84N"/>
                                 </constraints>
                                 <state key="normal" title="Fart Spangled Banner">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,10 +31,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct0-Re-RXf" customClass="BButton">
-                                <rect key="frame" x="50" y="184" width="220" height="35"/>
+                                <rect key="frame" x="50" y="150" width="220" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="SXN-Q3-UxA"/>
+                                    <constraint firstAttribute="height" constant="36" id="SXN-Q3-UxA"/>
                                     <constraint firstAttribute="width" constant="220" id="mmH-64-tqK"/>
                                 </constraints>
                                 <state key="normal" title="America the Fart">
@@ -45,11 +45,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-xH-skd" customClass="BButton">
-                                <rect key="frame" x="50" y="239" width="220" height="35"/>
+                                <rect key="frame" x="50" y="208" width="220" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="K30-hv-Nve"/>
-                                    <constraint firstAttribute="height" constant="35" id="lgH-Bn-RB2"/>
+                                    <constraint firstAttribute="height" constant="36" id="lgH-Bn-RB2"/>
                                 </constraints>
                                 <state key="normal" title="My Fart Tis of Thee">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,10 +59,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVd-8H-VGe" customClass="BButton">
-                                <rect key="frame" x="50" y="294" width="220" height="35"/>
+                                <rect key="frame" x="50" y="266" width="220" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Di0-me-0Pk"/>
+                                    <constraint firstAttribute="height" constant="36" id="Di0-me-0Pk"/>
                                     <constraint firstAttribute="width" constant="220" id="dRS-d7-kM7"/>
                                 </constraints>
                                 <state key="normal" title="Battle Farts of the Republic">
@@ -73,11 +73,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-zi-wPZ" customClass="BButton">
-                                <rect key="frame" x="50" y="349" width="220" height="35"/>
+                                <rect key="frame" x="50" y="324" width="220" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="GFQ-56-dSM"/>
-                                    <constraint firstAttribute="height" constant="35" id="Kak-d1-z5a"/>
+                                    <constraint firstAttribute="height" constant="36" id="Kak-d1-z5a"/>
                                 </constraints>
                                 <state key="normal" title="God Fart America">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,11 +87,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXv-ZB-TJ9" customClass="BButton">
-                                <rect key="frame" x="50" y="404" width="220" height="35"/>
+                                <rect key="frame" x="50" y="382" width="220" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="cHK-nW-Wpt"/>
-                                    <constraint firstAttribute="height" constant="35" id="hQl-Rj-mGy"/>
+                                    <constraint firstAttribute="height" constant="36" id="hQl-Rj-mGy"/>
                                 </constraints>
                                 <state key="normal" title="Yankee Farter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,31 +106,25 @@
                             <constraint firstItem="EDc-zi-wPZ" firstAttribute="leading" secondItem="ZXv-ZB-TJ9" secondAttribute="leading" id="6Z9-Vr-QQP"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="leading" secondItem="FaE-xH-skd" secondAttribute="leading" id="76d-Qp-dhi"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="FaE-xH-skd" secondAttribute="leading" id="Bcy-Ke-cza"/>
-                            <constraint firstItem="EDc-zi-wPZ" firstAttribute="top" secondItem="aVd-8H-VGe" secondAttribute="bottom" constant="20" id="I0C-Rv-p9b"/>
+                            <constraint firstItem="EDc-zi-wPZ" firstAttribute="top" secondItem="aVd-8H-VGe" secondAttribute="bottom" constant="22" id="I0C-Rv-p9b"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="leading" secondItem="EDc-zi-wPZ" secondAttribute="leading" id="KXM-Ao-hkQ"/>
-                            <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="65" id="LMP-o4-klU"/>
+                            <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="28" id="LMP-o4-klU"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="b5v-Fc-8RB"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cmH-mM-JC7"/>
-                            <constraint firstItem="FaE-xH-skd" firstAttribute="top" secondItem="Ct0-Re-RXf" secondAttribute="bottom" constant="20" id="gNI-bM-pQt"/>
-                            <constraint firstItem="Ct0-Re-RXf" firstAttribute="top" secondItem="4r4-Nd-Cb5" secondAttribute="bottom" constant="20" id="tVh-Qh-z4I"/>
-                            <constraint firstItem="ZXv-ZB-TJ9" firstAttribute="top" secondItem="EDc-zi-wPZ" secondAttribute="bottom" constant="20" id="xj0-z7-CSS"/>
-                            <constraint firstItem="aVd-8H-VGe" firstAttribute="top" secondItem="FaE-xH-skd" secondAttribute="bottom" constant="20" id="zuJ-lL-Qfq"/>
+                            <constraint firstItem="FaE-xH-skd" firstAttribute="top" secondItem="Ct0-Re-RXf" secondAttribute="bottom" constant="22" id="gNI-bM-pQt"/>
+                            <constraint firstItem="Ct0-Re-RXf" firstAttribute="top" secondItem="4r4-Nd-Cb5" secondAttribute="bottom" constant="22" id="tVh-Qh-z4I"/>
+                            <constraint firstItem="ZXv-ZB-TJ9" firstAttribute="top" secondItem="EDc-zi-wPZ" secondAttribute="bottom" constant="22" id="xj0-z7-CSS"/>
+                            <constraint firstItem="aVd-8H-VGe" firstAttribute="top" secondItem="FaE-xH-skd" secondAttribute="bottom" constant="22" id="zuJ-lL-Qfq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vcp-sG-Icw"/>
                     <connections>
-                        <outlet property="fartButton0" destination="4r4-Nd-Cb5" id="Aqx-be-5bx"/>
-                        <outlet property="fartButton1" destination="Ct0-Re-RXf" id="Z9T-zR-SXV"/>
-                        <outlet property="fartButton2" destination="FaE-xH-skd" id="UU1-i4-m7c"/>
-                        <outlet property="fartButton3" destination="aVd-8H-VGe" id="L1f-Ft-zRY"/>
-                        <outlet property="fartButton4" destination="EDc-zi-wPZ" id="W3w-1Q-8PN"/>
-                        <outlet property="fartButton5" destination="ZXv-ZB-TJ9" id="ahl-ac-dCa"/>
                         <outlet property="gradientView" destination="kh9-bI-dsS" id="iXw-Ja-02q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="78"/>
+            <point key="canvasLocation" x="491" y="73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rDf-r6-5Q3">
