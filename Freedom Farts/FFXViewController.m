@@ -41,7 +41,12 @@
     }]];
     
     for (BButton *eachBtn in self.buttons) {
-        [eachBtn setType:BButtonTypeDanger];
+        if ([eachBtn.titleLabel.text isEqualToString:@"Vote!"]) {
+            [eachBtn setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
+        }
+        else {
+            [eachBtn setType:BButtonTypeDanger];
+        }
     }
 }
 
@@ -52,6 +57,12 @@
 }
 
 #pragma mark - Actions
+
+- (IBAction)votePressed:(UIButton *)sender
+{
+    SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://vote411.org"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (IBAction)fartPressed:(UIButton *)sender
 {
@@ -64,7 +75,7 @@
                                                 }];
 }
 
-- (IBAction)hexedBitsPressed:(UIButton *)sender
+- (IBAction)hexedBitsPressed:(UIBarButtonItem *)sender
 {
     SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://hexedbits.com"];
     [self.navigationController pushViewController:vc animated:YES];

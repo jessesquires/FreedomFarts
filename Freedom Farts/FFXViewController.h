@@ -16,8 +16,10 @@
 
 @property (weak, nonatomic) IBOutlet SAMGradientView *gradientView;
 
+- (IBAction)votePressed:(UIButton *)sender;
+
 - (IBAction)fartPressed:(UIButton *)sender;
 
-- (IBAction)hexedBitsPressed:(UIButton *)sender;
+- (IBAction)hexedBitsPressed:(UIBarButtonItem *)sender;
 
 @end
