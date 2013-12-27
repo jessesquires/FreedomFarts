@@ -4,7 +4,7 @@
 
 ### About
 
-Freedom Farts is the politically-themed, satirical fart app that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012). However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)". The original submission also contained voter information, to bring awareness to the "importance" of voting. (More on that below.) After rejection, an appeal to the Apple Review Board was submitted immediately but the rejection was upheld. Now, I've decided that this app deserves to be public, so here it is -- free and open-source.
+Freedom Farts is the politically-themed, satirical fart app that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012). However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)". The original submission also contained voter information, to bring awareness to the "importance" of voting. (More on that below.) After rejection, an appeal to the Apple Review Board was submitted immediately but the rejection was upheld. Now, I've decided that this app deserves to be public, so here it is -- free and open-source. It has since been simplified, slimmed down, and updated for iOS 7.
 
 ### Why?
 

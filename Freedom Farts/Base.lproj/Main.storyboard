@@ -134,7 +134,7 @@
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="top" secondItem="FaE-xH-skd" secondAttribute="bottom" constant="20" id="zuJ-lL-Qfq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vcp-sG-Icw"/>
+                    <navigationItem key="navigationItem" title="Freedom Farts" id="Vcp-sG-Icw"/>
                     <connections>
                         <outlet property="gradientView" destination="kh9-bI-dsS" id="iXw-Ja-02q"/>
                     </connections>
