@@ -12,6 +12,7 @@
 #import <JSQSystemSoundPlayer/JSQSystemSoundPlayer.h>
 #import <BButton/BButton.h>
 #import <SAMGradientView/SAMGradientView.h>
+#import <SVWebViewController/SVWebViewController.h>
 
 @interface FFXViewController ()
 
@@ -63,6 +64,12 @@
                                                 completion:^{
                                                     //
                                                 }];
+}
+
+- (IBAction)hexedBitsPressed:(UIButton *)sender
+{
+    SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://hexedbits.com"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

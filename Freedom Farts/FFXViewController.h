@@ -18,4 +18,6 @@
 
 - (IBAction)fartPressed:(UIButton *)sender;
 
+- (IBAction)hexedBitsPressed:(UIButton *)sender;
+
 @end
