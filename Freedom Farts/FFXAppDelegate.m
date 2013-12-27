@@ -9,11 +9,17 @@
 //
 
 #import "FFXAppDelegate.h"
+#import "UIColor+FreedomFarts.h"
 
 @implementation FFXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setTintColor:[UIColor ffx_darkBlueColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSFontAttributeName : [UIFont systemFontOfSize:20.0f],
+                                                           NSForegroundColorAttributeName : [UIColor ffx_darkBlueColor]
+                                                           }];
     return YES;
 }
 

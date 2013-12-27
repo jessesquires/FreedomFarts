@@ -13,6 +13,7 @@
 #import <BButton/BButton.h>
 #import <SAMGradientView/SAMGradientView.h>
 #import <SVWebViewController/SVWebViewController.h>
+#import "UIColor+FreedomFarts.h"
 
 @interface FFXViewController ()
 

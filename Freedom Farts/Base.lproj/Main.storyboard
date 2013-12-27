@@ -134,6 +134,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Freedom Farts" id="Vcp-sG-Icw">
+                        <barButtonItem key="backBarButtonItem" title=" " id="P4s-XQ-rCO"/>
                         <barButtonItem key="rightBarButtonItem" image="hb-white" id="k0z-gf-aQB">
                             <connections>
                                 <action selector="hexedBitsPressed:" destination="vXZ-lx-hvc" id="pyq-iY-SjY"/>
