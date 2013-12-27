@@ -135,7 +135,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Freedom Farts" id="Vcp-sG-Icw">
                         <barButtonItem key="backBarButtonItem" title=" " id="P4s-XQ-rCO"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="FsE-sr-qLF"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="FsE-sr-qLF">
+                            <connections>
+                                <action selector="actionPressed:" destination="vXZ-lx-hvc" id="WEn-Ia-ZWe"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="hb-white" id="k0z-gf-aQB">
                             <connections>
                                 <action selector="hexedBitsPressed:" destination="vXZ-lx-hvc" id="pyq-iY-SjY"/>

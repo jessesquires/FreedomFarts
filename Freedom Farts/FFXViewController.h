@@ -22,4 +22,6 @@
 
 - (IBAction)hexedBitsPressed:(UIBarButtonItem *)sender;
 
+- (IBAction)actionPressed:(UIBarButtonItem *)sender;
+
 @end

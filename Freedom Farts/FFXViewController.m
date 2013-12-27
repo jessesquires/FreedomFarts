@@ -15,7 +15,10 @@
 #import <SVWebViewController/SVWebViewController.h>
 #import "UIColor+FreedomFarts.h"
 
-@interface FFXViewController ()
+static NSString * const kFFXActionFacebook = @"Facebook";
+static NSString * const kFFXActionTwitter = @"Twitter";
+
+@interface FFXViewController () <UIActionSheetDelegate>
 
 @property (copy, nonatomic) NSArray *buttons;
 
@@ -79,6 +82,23 @@
 {
     SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://hexedbits.com"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)actionPressed:(UIBarButtonItem *)sender
+{
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Share"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                         destructiveButtonTitle:nil
+                                              otherButtonTitles:kFFXActionFacebook, kFFXActionTwitter, nil];
+    [sheet showFromBarButtonItem:sender animated:YES];
+}
+
+#pragma mark - Action sheet delegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
 }
 
 @end
