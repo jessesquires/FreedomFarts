@@ -115,8 +115,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (void)presentWelcomeView
 {
-    FFXWelcomeViewController *vc = [FFXWelcomeViewController welcomeView];
-    [self presentPopupViewController:vc animationType:MJPopupViewAnimationSlideBottomBottom];
+    [FFXWelcomeViewController presentWelcomeViewFromViewController:self];
 }
 
 @end

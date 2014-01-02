@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *electionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *taglineLabel;
 
-+ (instancetype)welcomeView;
++ (void)presentWelcomeViewFromViewController:(UIViewController *)fromVC;
+
++ (void)dismissWelcomeViewFromViewController:(UIViewController *)fromVC;
 
 @end
