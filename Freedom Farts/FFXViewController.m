@@ -40,7 +40,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     
     self.gradientView.gradientColors = @[
                                          [UIColor ffx_lightBlueColor],
-                                         [UIColor ffx_mediumBlueColor]
+                                         [UIColor ffx_patrioticBlue]
                                          ];
     
     self.buttons = [self.view.subviews filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
