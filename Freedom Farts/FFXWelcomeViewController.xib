@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFXWelcomeViewController">
+            <connections>
+                <outlet property="electionLabel" destination="23" id="32"/>
+                <outlet property="subtitleLabel" destination="12" id="31"/>
+                <outlet property="taglineLabel" destination="33" id="46"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="welcomeLabel" destination="4" id="30"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="20" y="7" width="220" height="144"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="6No-Bz-KXV"/>
+                        <constraint firstAttribute="height" constant="144" id="Er4-vO-vIn"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Welcome to the Fart Party">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="20" name="Zapfino"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.5"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A BIFARTISAN EFFORT TO UNITE PATRIOTS FROM ANY POLITICAL FARTY #freedomfartsapp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                    <rect key="frame" x="30" y="113" width="200" height="69"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="ICB-c1-vIU"/>
+                        <constraint firstAttribute="height" constant="69" id="jlN-ks-4x1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ELECTION DAY November 6th" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="148" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                    <rect key="frame" x="56" y="198" width="148" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="148" id="Q4Y-07-gUt"/>
+                        <constraint firstAttribute="height" constant="46" id="YXZ-ad-Q5B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="In God, We Fart" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="33">
+                    <rect key="frame" x="20" y="252" width="220" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="gvm-Mn-1Bu"/>
+                        <constraint firstAttribute="width" constant="220" id="ohc-YP-lAu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Baskerville-SemiBoldItalic" family="Baskerville" pointSize="17"/>
+                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="23" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="47" id="02e-4I-Txw"/>
+                <constraint firstAttribute="bottom" secondItem="33" secondAttribute="bottom" constant="20" symbolic="YES" id="AI5-wF-qI0"/>
+                <constraint firstItem="23" firstAttribute="top" secondItem="12" secondAttribute="bottom" constant="16" id="Aea-8H-DNr"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="I66-c0-jBh"/>
+                <constraint firstItem="23" firstAttribute="centerX" secondItem="33" secondAttribute="centerX" id="Rr1-fO-TkQ"/>
+                <constraint firstItem="23" firstAttribute="centerX" secondItem="12" secondAttribute="centerX" id="k9h-S9-9tW"/>
+                <constraint firstItem="33" firstAttribute="top" secondItem="23" secondAttribute="bottom" constant="8" symbolic="YES" id="r5e-YJ-3hs"/>
+                <constraint firstItem="33" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="v7V-sx-eev"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

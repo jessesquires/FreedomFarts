@@ -9,10 +9,12 @@
 //
 
 #import "FFXViewController.h"
+
 #import <JSQSystemSoundPlayer/JSQSystemSoundPlayer.h>
 #import <BButton/BButton.h>
 #import <SAMGradientView/SAMGradientView.h>
 #import <SVWebViewController/SVWebViewController.h>
+#import "FFXWelcomeViewController.h"
 #import "UIColor+FreedomFarts.h"
 
 static NSString * const kFFXActionFacebook = @"Facebook";
@@ -21,6 +23,8 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 @interface FFXViewController () <UIActionSheetDelegate>
 
 @property (copy, nonatomic) NSArray *buttons;
+
+- (void)presentWelcomeView;
 
 @end
 
@@ -51,6 +55,12 @@ static NSString * const kFFXActionTwitter = @"Twitter";
             [eachBtn setType:BButtonTypeDanger];
         }
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self presentWelcomeView];
 }
 
 - (void)dealloc
@@ -99,6 +109,14 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     
+}
+
+#pragma mark - Utilities
+
+- (void)presentWelcomeView
+{
+    FFXWelcomeViewController *vc = [FFXWelcomeViewController welcomeView];
+    [self presentPopupViewController:vc animationType:MJPopupViewAnimationSlideBottomBottom];
 }
 
 @end
