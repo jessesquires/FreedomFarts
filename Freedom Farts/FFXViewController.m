@@ -70,12 +70,6 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     [self presentWelcomeView];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    
-}
-
 - (void)dealloc
 {
     _gradientView = nil;
