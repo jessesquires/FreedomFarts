@@ -36,4 +36,20 @@
                            alpha:1.0f];
 }
 
++ (UIColor *)ffx_patrioticBlue
+{
+    return [UIColor colorWithHue:219.0f/360.0f
+                      saturation:0.46f
+                      brightness:0.39f
+                           alpha:1.0f];
+}
+
++ (UIColor *)ffx_patrioticRed
+{
+    return [UIColor colorWithRed:168.0f/255.0f
+                           green:61.0f/255.0f
+                            blue:64.0f/255.0f
+                           alpha:1.0f];
+}
+
 @end

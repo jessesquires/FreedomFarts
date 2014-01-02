@@ -18,4 +18,8 @@
 
 + (UIColor *)ffx_darkBlueColor;
 
++ (UIColor *)ffx_patrioticBlue;
+
++ (UIColor *)ffx_patrioticRed;
+
 @end
