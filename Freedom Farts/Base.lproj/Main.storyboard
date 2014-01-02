@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" constant="220" id="7Z5-DJ-YEb"/>
                                     <constraint firstAttribute="height" constant="40" id="apd-sB-GY9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Vote!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="220" id="CiS-4C-yVv"/>
                                     <constraint firstAttribute="height" constant="40" id="tgP-ap-84N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Fart Spangled Banner">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,7 +53,7 @@
                                     <constraint firstAttribute="height" constant="40" id="SXN-Q3-UxA"/>
                                     <constraint firstAttribute="width" constant="220" id="mmH-64-tqK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="America the Fart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="width" constant="220" id="K30-hv-Nve"/>
                                     <constraint firstAttribute="height" constant="40" id="lgH-Bn-RB2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="My Fart Tis of Thee">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="height" constant="40" id="Di0-me-0Pk"/>
                                     <constraint firstAttribute="width" constant="220" id="dRS-d7-kM7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Battle Farts of the Republic">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -98,7 +98,7 @@
                                     <constraint firstAttribute="width" constant="220" id="GFQ-56-dSM"/>
                                     <constraint firstAttribute="height" constant="40" id="Kak-d1-z5a"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="God Fart America">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -113,7 +113,7 @@
                                     <constraint firstAttribute="width" constant="220" id="cHK-nW-Wpt"/>
                                     <constraint firstAttribute="height" constant="40" id="hQl-Rj-mGy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Yankee Farter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
