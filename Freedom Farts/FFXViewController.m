@@ -14,15 +14,16 @@
 #import <BButton/BButton.h>
 #import <SAMGradientView/SAMGradientView.h>
 #import <SVWebViewController/SVWebViewController.h>
+
 #import "FFXWelcomeViewController.h"
 #import "UIColor+FreedomFarts.h"
+#import "UIDevice+FreedomFarts.h"
 
 static NSString * const kFFXActionFacebook = @"Facebook";
 static NSString * const kFFXActionTwitter = @"Twitter";
 
 @interface FFXViewController () <UIActionSheetDelegate>
 
-@property (copy, nonatomic) NSArray *buttons;
 @property (copy, nonatomic) NSString *currentSound;
 
 - (void)presentWelcomeView;
@@ -44,10 +45,6 @@ static NSString * const kFFXActionTwitter = @"Twitter";
                                          [UIColor ffx_patrioticBlue]
                                          ];
     
-    self.buttons = [self.view.subviews filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
-        return [evaluatedObject isKindOfClass:[BButton class]];
-    }]];
-    
     for (BButton *eachBtn in self.buttons) {
         if ([eachBtn.titleLabel.text isEqualToString:@"Vote!"]) {
             [eachBtn setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
@@ -56,6 +53,12 @@ static NSString * const kFFXActionTwitter = @"Twitter";
             [eachBtn setType:BButtonTypeDanger];
         }
     }
+    
+    for (NSLayoutConstraint *eachConstraint in self.buttonSpacingConstraints) {
+        eachConstraint.constant = [UIDevice ffx_isPhone4Inch] ? 24.0f : 14.0f;
+    }
+    
+    self.topSpacingConstraint.constant = [UIDevice ffx_isPhone4Inch] ? 38.0f : 26.0f;
 }
 
 - (void)viewDidAppear:(BOOL)animated

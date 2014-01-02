@@ -15,6 +15,10 @@
 @interface FFXViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet SAMGradientView *gradientView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpacingConstraint;
+
+@property (strong, nonatomic) IBOutletCollection(BButton) NSArray *buttons;
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *buttonSpacingConstraints;
 
 - (IBAction)votePressed:(UIButton *)sender;
 

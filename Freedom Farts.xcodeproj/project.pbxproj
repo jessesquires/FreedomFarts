@@ -11,6 +11,7 @@
 		88353A631874FB7200066E59 /* FFXWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A601874FB7200066E59 /* FFXWelcomeViewController.m */; };
 		88353A641874FB7200066E59 /* FFXWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88353A611874FB7200066E59 /* FFXWelcomeViewController.xib */; };
 		88353A661874FC9600066E59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A651874FC9600066E59 /* QuartzCore.framework */; };
+		88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */; };
 		885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */; };
 		88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
 		88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDC186CBF85001FC35E /* CoreGraphics.framework */; };
@@ -50,6 +51,8 @@
 		88353A611874FB7200066E59 /* FFXWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFXWelcomeViewController.xib; sourceTree = "<group>"; };
 		88353A621874FB7200066E59 /* FFXWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFXWelcomeViewController.h; sourceTree = "<group>"; };
 		88353A651874FC9600066E59 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		88353A6718750C0D00066E59 /* UIDevice+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FreedomFarts.h"; sourceTree = "<group>"; };
+		88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FreedomFarts.m"; sourceTree = "<group>"; };
 		8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FreedomFarts.h"; sourceTree = "<group>"; };
 		8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FreedomFarts.m"; sourceTree = "<group>"; };
 		88F86ED7186CBF85001FC35E /* Freedom Farts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freedom Farts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +158,8 @@
 				88F86EE1186CBF85001FC35E /* Supporting Files */,
 				8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */,
 				8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */,
+				88353A6718750C0D00066E59 /* UIDevice+FreedomFarts.h */,
+				88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */,
 			);
 			path = "Freedom Farts";
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				88F86EE7186CBF85001FC35E /* main.m in Sources */,
 				88F86EEB186CBF85001FC35E /* FFXAppDelegate.m in Sources */,
 				885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */,
+				88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

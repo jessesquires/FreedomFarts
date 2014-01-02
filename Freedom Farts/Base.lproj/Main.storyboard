@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CRf-nT-n8M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="SAMGradientView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmo-Fk-zni" customClass="BButton">
@@ -130,10 +130,10 @@
                             <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="Kmo-Fk-zni" secondAttribute="bottom" constant="14" id="DuC-Kx-XQb"/>
                             <constraint firstItem="EDc-zi-wPZ" firstAttribute="top" secondItem="aVd-8H-VGe" secondAttribute="bottom" constant="14" id="I0C-Rv-p9b"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="leading" secondItem="EDc-zi-wPZ" secondAttribute="leading" id="KXM-Ao-hkQ"/>
-                            <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="80" id="LMP-o4-klU"/>
                             <constraint firstItem="Kmo-Fk-zni" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="UJv-yf-Ap7"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="b5v-Fc-8RB"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cmH-mM-JC7"/>
+                            <constraint firstItem="Kmo-Fk-zni" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="26" id="fZc-oP-XS3"/>
                             <constraint firstItem="FaE-xH-skd" firstAttribute="top" secondItem="Ct0-Re-RXf" secondAttribute="bottom" constant="14" id="gNI-bM-pQt"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="top" secondItem="4r4-Nd-Cb5" secondAttribute="bottom" constant="14" id="tVh-Qh-z4I"/>
                             <constraint firstItem="ZXv-ZB-TJ9" firstAttribute="top" secondItem="EDc-zi-wPZ" secondAttribute="bottom" constant="14" id="xj0-z7-CSS"/>
@@ -155,6 +155,20 @@
                     </navigationItem>
                     <connections>
                         <outlet property="gradientView" destination="kh9-bI-dsS" id="iXw-Ja-02q"/>
+                        <outlet property="topSpacingConstraint" destination="fZc-oP-XS3" id="q9d-bp-0GH"/>
+                        <outletCollection property="buttonSpacingConstraints" destination="xj0-z7-CSS" id="LtD-fD-RHa"/>
+                        <outletCollection property="buttonSpacingConstraints" destination="gNI-bM-pQt" id="VVO-w9-Ffg"/>
+                        <outletCollection property="buttonSpacingConstraints" destination="I0C-Rv-p9b" id="Jgi-a5-Ota"/>
+                        <outletCollection property="buttonSpacingConstraints" destination="zuJ-lL-Qfq" id="hUi-Z9-B73"/>
+                        <outletCollection property="buttonSpacingConstraints" destination="DuC-Kx-XQb" id="WeB-yH-spI"/>
+                        <outletCollection property="buttonSpacingConstraints" destination="tVh-Qh-z4I" id="Tfc-YK-lMq"/>
+                        <outletCollection property="buttons" destination="Kmo-Fk-zni" id="QQb-nd-quB"/>
+                        <outletCollection property="buttons" destination="4r4-Nd-Cb5" id="QVr-57-FgK"/>
+                        <outletCollection property="buttons" destination="Ct0-Re-RXf" id="0aG-ss-q07"/>
+                        <outletCollection property="buttons" destination="FaE-xH-skd" id="O3z-Ga-e9E"/>
+                        <outletCollection property="buttons" destination="aVd-8H-VGe" id="xqs-d9-6J8"/>
+                        <outletCollection property="buttons" destination="EDc-zi-wPZ" id="eSh-QI-qY4"/>
+                        <outletCollection property="buttons" destination="ZXv-ZB-TJ9" id="ZU7-Fk-i4R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -183,6 +197,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
