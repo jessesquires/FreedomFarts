@@ -12,13 +12,11 @@
 
 @interface UIColor (FreedomFarts)
 
-+ (UIColor *)ffx_lightBlueColor;
-
-+ (UIColor *)ffx_mediumBlueColor;
-
-+ (UIColor *)ffx_darkBlueColor;
++ (UIColor *)ffx_patrioticBlueDark;
 
 + (UIColor *)ffx_patrioticBlue;
+
++ (UIColor *)ffx_patrioticBlueLight;
 
 + (UIColor *)ffx_patrioticRed;
 

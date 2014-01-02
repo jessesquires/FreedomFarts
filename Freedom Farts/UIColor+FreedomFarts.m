@@ -12,23 +12,7 @@
 
 @implementation UIColor (FreedomFarts)
 
-+ (UIColor *)ffx_lightBlueColor
-{
-    return [UIColor colorWithHue:211.0f/360.0f
-                      saturation:0.5f
-                      brightness:1.0f
-                           alpha:1.0f];
-}
-
-+ (UIColor *)ffx_mediumBlueColor
-{
-    return [UIColor colorWithHue:211.0f/360.0f
-                      saturation:0.8f
-                      brightness:0.9f
-                           alpha:1.0f];
-}
-
-+ (UIColor *)ffx_darkBlueColor
++ (UIColor *)ffx_patrioticBlueDark
 {
     return [UIColor colorWithHue:211.0f/360.0f
                       saturation:0.6f
@@ -39,9 +23,17 @@
 + (UIColor *)ffx_patrioticBlue
 {
     return [UIColor colorWithHue:219.0f/360.0f
-                      saturation:0.46f
-                      brightness:0.39f
+                      saturation:0.56f
+                      brightness:0.49f
                            alpha:1.0f];
+}
+
++ (UIColor *)ffx_patrioticBlueLight
+{
+    return [UIColor colorWithHue:219.0f/360.0f
+                      saturation:0.56f
+                      brightness:0.92f
+                           alpha:0.8f];
 }
 
 + (UIColor *)ffx_patrioticRed

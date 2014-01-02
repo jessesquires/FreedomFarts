@@ -15,10 +15,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UINavigationBar appearance] setTintColor:[UIColor ffx_darkBlueColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor ffx_patrioticBlueDark]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
                                                            NSFontAttributeName : [UIFont systemFontOfSize:20.0f],
-                                                           NSForegroundColorAttributeName : [UIColor ffx_darkBlueColor]
+                                                           NSForegroundColorAttributeName : [UIColor ffx_patrioticBlueDark]
                                                            }];
     return YES;
 }

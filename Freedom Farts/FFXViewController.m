@@ -44,7 +44,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     [super viewDidLoad];
     
     self.gradientView.gradientColors = @[
-                                         [UIColor ffx_lightBlueColor],
+                                         [UIColor ffx_patrioticBlueLight],
                                          [UIColor ffx_patrioticBlue]
                                          ];
     
