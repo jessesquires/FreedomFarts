@@ -18,6 +18,7 @@
 #import "FFXWelcomeViewController.h"
 #import "UIColor+FreedomFarts.h"
 #import "UIDevice+FreedomFarts.h"
+#import "UIView+FreedomFarts.h"
 
 static NSString * const kFFXActionFacebook = @"Facebook";
 static NSString * const kFFXActionTwitter = @"Twitter";
@@ -27,6 +28,8 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 @property (copy, nonatomic) NSString *currentSound;
 
 - (void)presentWelcomeView;
+
+- (void)toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender;
 
 @end
 
@@ -67,6 +70,12 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     [self presentWelcomeView];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+}
+
 - (void)dealloc
 {
     _gradientView = nil;
@@ -83,12 +92,15 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (IBAction)fartPressed:(UIButton *)sender
 {
+    [self.view bringSubviewToFront:sender];
+    [self toggleButtonsEnabled:NO sender:sender];
+    
     self.currentSound = [sender.titleLabel.text lowercaseString];
     
     [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:self.currentSound
                                                  extension:kJSQSystemSoundTypeWAV
                                                 completion:^{
-                                                    //
+                                                    [self toggleButtonsEnabled:YES sender:nil];
                                                 }];
 }
 
@@ -110,9 +122,15 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 #pragma mark - Shake event
 
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     if (motion == UIEventSubtypeMotionShake && self.currentSound) {
+        [self toggleButtonsEnabled:YES sender:nil];
         [[JSQSystemSoundPlayer sharedPlayer] stopSoundWithFilename:self.currentSound];
     }
 }
@@ -129,6 +147,21 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)presentWelcomeView
 {
     [FFXWelcomeViewController presentWelcomeViewFromViewController:self];
+}
+
+- (void)toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender
+{
+    self.navigationItem.leftBarButtonItem.enabled = enabled;
+    self.navigationItem.rightBarButtonItem.enabled = enabled;
+    
+    for (BButton *eachButton in self.buttons) {
+        eachButton.userInteractionEnabled = enabled;
+        
+        if (!sender || (sender && ![eachButton isEqual:sender])) {
+            eachButton.enabled = enabled;
+            [eachButton ffx_fadeToValue:enabled ? 1.0f : 0.25f];
+        }
+    }
 }
 
 @end
