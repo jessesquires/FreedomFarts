@@ -23,6 +23,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 @interface FFXViewController () <UIActionSheetDelegate>
 
 @property (copy, nonatomic) NSArray *buttons;
+@property (copy, nonatomic) NSString *currentSound;
 
 - (void)presentWelcomeView;
 
@@ -79,9 +80,9 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (IBAction)fartPressed:(UIButton *)sender
 {
-    NSString *soundFileName = [sender.titleLabel.text lowercaseString];
+    self.currentSound = [sender.titleLabel.text lowercaseString];
     
-    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:soundFileName
+    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:self.currentSound
                                                  extension:kJSQSystemSoundTypeWAV
                                                 completion:^{
                                                     //
@@ -102,6 +103,15 @@ static NSString * const kFFXActionTwitter = @"Twitter";
                                          destructiveButtonTitle:nil
                                               otherButtonTitles:kFFXActionFacebook, kFFXActionTwitter, nil];
     [sheet showFromBarButtonItem:sender animated:YES];
+}
+
+#pragma mark - Shake event
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake && self.currentSound) {
+        [[JSQSystemSoundPlayer sharedPlayer] stopSoundWithFilename:self.currentSound];
+    }
 }
 
 #pragma mark - Action sheet delegate
