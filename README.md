@@ -2,9 +2,15 @@
 
 *Join the Fart Party*
 
+>Greetings Patriots! Welcome to the **Fart Party** - the one and only **bifartisan** effort to unite patriots from all political **farties**! Can't decide who to vote for in our **two-farty** political system? Tired of feeling like you're stuck between two **farts** that both stink? Don't have the proper voter ID? **Fart it!** Don't forget to VOTE on Election Day and if you can't vote, **keep farting** — it's just as effective! 
+
+*In God, We Fart.*
+
 ### About
 
-Freedom Farts is the politically-themed, satirical fart app that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012). However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)". The app also contains a link to [vote411.org](http://www.vote411.org), to bring awareness to the "importance" of voting. (lolololol! *More on that below.*) After rejection, an appeal to the Apple Review Board was submitted immediately but the rejection was upheld. Now, I've decided that this app deserves to be public, so here it is -- free and open-source. It has since been simplified, slimmed down, and updated for iOS 7.
+Freedom Farts is the politically-themed, satirical fart app that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012)(Wasn't that exciting!). However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)". The app also contains a link to [vote411.org](http://www.vote411.org), to bring awareness to the "importance" of voting. (lolololol! *More on that below.*) After rejection, an appeal to the Apple Review Board was submitted immediately but the rejection was upheld. 
+
+I've decided that this app deserves to be public. It is too good to collect dust on my hard drive. So, here it is -- free and open-source. It has since been streamlined and updated for iOS 7.
 
 ### Why?
 
@@ -12,7 +18,7 @@ Politics has become so absurb in the United States, so I made this app to reflec
 
 ### Donate
 
-Donate via [Square Cash](https://square.com/cash). All proceeds support the open-source projects of [@hexedbits](http://bit.ly/hbgithub) and [@jessesquires](http://bit.ly/jsgithub).
+Donate via [Square Cash](https://square.com/cash). All proceeds support the open-source projects of [@jessesquires](http://bit.ly/jsgithub) and [@hexedbits](http://bit.ly/hbgithub).
 
 <h4><a href="mailto:jesse.squires.developer@gmail.com?cc=cash@square.com&subject=$1&body=Thanks for Freedom Farts! I'm joining the Fart Party!">Send $1</a> <em>Join the Fart Party!</em></h4>
 
