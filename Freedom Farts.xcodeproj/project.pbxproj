@@ -174,14 +174,14 @@
 				88F86EEC186CBF85001FC35E /* Main.storyboard */,
 				88F86F12186CE600001FC35E /* Sounds */,
 				88F86EE1186CBF85001FC35E /* Supporting Files */,
+				88353A771876882200066E59 /* UIAlertView+FreedomFarts.h */,
+				88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */,
 				8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */,
 				8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */,
 				88353A6718750C0D00066E59 /* UIDevice+FreedomFarts.h */,
 				88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */,
 				88353A6A1875105900066E59 /* UIView+FreedomFarts.h */,
 				88353A6B1875105900066E59 /* UIView+FreedomFarts.m */,
-				88353A771876882200066E59 /* UIAlertView+FreedomFarts.h */,
-				88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */,
 			);
 			path = "Freedom Farts";
 			sourceTree = "<group>";
