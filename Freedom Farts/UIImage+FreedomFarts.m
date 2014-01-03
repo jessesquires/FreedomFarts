@@ -23,7 +23,7 @@
         blur = 1.0f;
     }
     
-    NSInteger boxSize = (NSInteger)(blur * 40.0f);
+    int boxSize = (int)(blur * 40.0f);
     boxSize = boxSize - (boxSize % 2) + 1;
     
     CGImageRef imgRef = self.CGImage;
@@ -44,13 +44,13 @@
     outBuffer.height = CGImageGetHeight(imgRef);
     outBuffer.rowBytes = CGImageGetBytesPerRow(imgRef);
     
-    vImage_Error error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    vImage_Error error = (vImage_Error)vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
     
     if (!error) {
         error = vImageBoxConvolve_ARGB8888(&outBuffer, &inBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
         
         if (!error) {
-            error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+            vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
         }
     }
     
