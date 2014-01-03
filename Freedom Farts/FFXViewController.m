@@ -13,7 +13,6 @@
 #import <Social/Social.h>
 #import <JSQSystemSoundPlayer/JSQSystemSoundPlayer.h>
 #import <BButton/BButton.h>
-#import <SAMGradientView/SAMGradientView.h>
 #import <SVWebViewController/SVWebViewController.h>
 
 #import "FFXWelcomeViewController.h"
@@ -21,6 +20,7 @@
 #import "UIDevice+FreedomFarts.h"
 #import "UIView+FreedomFarts.h"
 #import "UIAlertView+FreedomFarts.h"
+#import "UIImage+FreedomFarts.h"
 
 static NSString * const kFFXActionFacebook = @"Facebook";
 static NSString * const kFFXActionTwitter = @"Twitter";
@@ -49,7 +49,9 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     [super viewDidLoad];
     self.isFirstLaunch = YES;
     
-    self.gradientView.gradientColors = @[];
+    self.imageView.image = [[UIImage imageNamed:@"capitol"] ffx_blurredImageWithBlurValue:0.6f];
+    self.imageView.contentMode = UIViewContentModeScaleToFill;
+    self.imageView.layer.opacity = 0.6f;
     
     for (BButton *eachBtn in self.buttons) {
         if ([eachBtn.titleLabel.text isEqualToString:@"Vote!"]) {
@@ -71,12 +73,6 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     [super viewDidAppear:animated];
     [self ffx_presentWelcomeView];
-}
-
-- (void)dealloc
-{
-    _gradientView = nil;
-    _buttons = nil;
 }
 
 #pragma mark - Status bar

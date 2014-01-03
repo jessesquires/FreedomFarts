@@ -10,10 +10,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (FreedomFarts)
+@interface UIImage (FreedomFarts)
 
-+ (UIColor *)ffx_patrioticBlueColor;
-
-+ (UIColor *)ffx_patrioticRedColor;
+- (UIImage *)ffx_blurredImageWithBlurValue:(CGFloat)blur;
 
 @end

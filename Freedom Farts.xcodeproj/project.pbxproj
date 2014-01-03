@@ -19,6 +19,8 @@
 		88353A741876857100066E59 /* fart-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A701876857100066E59 /* fart-short.wav */; };
 		88353A761876870A00066E59 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A751876870900066E59 /* Social.framework */; };
 		88353A791876882200066E59 /* UIAlertView+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */; };
+		88353A7C1876A21C00066E59 /* UIImage+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */; };
+		88353A7E1876A41D00066E59 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A7D1876A41D00066E59 /* Accelerate.framework */; };
 		885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */; };
 		88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
 		88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDC186CBF85001FC35E /* CoreGraphics.framework */; };
@@ -69,6 +71,9 @@
 		88353A751876870900066E59 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		88353A771876882200066E59 /* UIAlertView+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+FreedomFarts.h"; sourceTree = "<group>"; };
 		88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+FreedomFarts.m"; sourceTree = "<group>"; };
+		88353A7A1876A21C00066E59 /* UIImage+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FreedomFarts.h"; sourceTree = "<group>"; };
+		88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FreedomFarts.m"; sourceTree = "<group>"; };
+		88353A7D1876A41D00066E59 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FreedomFarts.h"; sourceTree = "<group>"; };
 		8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FreedomFarts.m"; sourceTree = "<group>"; };
 		88F86ED7186CBF85001FC35E /* Freedom Farts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freedom Farts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88353A7E1876A41D00066E59 /* Accelerate.framework in Frameworks */,
 				88353A761876870A00066E59 /* Social.framework in Frameworks */,
 				88353A661874FC9600066E59 /* QuartzCore.framework in Frameworks */,
 				88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */,
@@ -149,11 +155,12 @@
 		88F86ED9186CBF85001FC35E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88353A751876870900066E59 /* Social.framework */,
+				88353A7D1876A41D00066E59 /* Accelerate.framework */,
 				88F86EDC186CBF85001FC35E /* CoreGraphics.framework */,
 				88F86EDA186CBF85001FC35E /* Foundation.framework */,
 				C64CE0508C8743EE9C99C0B8 /* libPods.a */,
 				88353A651874FC9600066E59 /* QuartzCore.framework */,
+				88353A751876870900066E59 /* Social.framework */,
 				88F86EDE186CBF85001FC35E /* UIKit.framework */,
 				88F86EFC186CBF85001FC35E /* XCTest.framework */,
 			);
@@ -180,6 +187,8 @@
 				8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */,
 				88353A6718750C0D00066E59 /* UIDevice+FreedomFarts.h */,
 				88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */,
+				88353A7A1876A21C00066E59 /* UIImage+FreedomFarts.h */,
+				88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */,
 				88353A6A1875105900066E59 /* UIView+FreedomFarts.h */,
 				88353A6B1875105900066E59 /* UIView+FreedomFarts.m */,
 			);
@@ -386,6 +395,7 @@
 				88F86EEB186CBF85001FC35E /* FFXAppDelegate.m in Sources */,
 				88353A6C1875105900066E59 /* UIView+FreedomFarts.m in Sources */,
 				885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */,
+				88353A7C1876A21C00066E59 /* UIImage+FreedomFarts.m in Sources */,
 				88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

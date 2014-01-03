@@ -2,21 +2,18 @@ PODS:
   - BButton (3.2.3)
   - JSQSystemSoundPlayer (1.4.0)
   - MJPopupViewController (0.4)
-  - SAMGradientView (0.2.1)
   - SVWebViewController (1.0)
 
 DEPENDENCIES:
   - BButton (= 3.2.3)
   - JSQSystemSoundPlayer (= 1.4.0)
   - MJPopupViewController (= 0.4)
-  - SAMGradientView (= 0.2.1)
   - SVWebViewController (= 1.0)
 
 SPEC CHECKSUMS:
   BButton: b405745cd7ccc9444c696b8690fb79541623766a
   JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
   MJPopupViewController: 4cd0badf3dae541017e0e16e2d2c7578d9224052
-  SAMGradientView: ab5543a14a69ecf5fc10239091740291c50b328c
   SVWebViewController: e576371f7015bce92c97c304c32336700064847b
 
 COCOAPODS: 0.29.0

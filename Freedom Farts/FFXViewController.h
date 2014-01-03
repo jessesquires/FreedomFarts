@@ -10,11 +10,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class SAMGradientView, BButton;
+@class BButton;
 
 @interface FFXViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet SAMGradientView *gradientView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpacingConstraint;
 
 @property (strong, nonatomic) IBOutletCollection(BButton) NSArray *buttons;

@@ -12,10 +12,15 @@
                         <viewControllerLayoutGuide type="top" id="DiY-DK-dxB"/>
                         <viewControllerLayoutGuide type="bottom" id="CRf-nT-n8M"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="SAMGradientView">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVD-Yg-Mja" customClass="UIImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmo-Fk-zni" customClass="BButton">
                                 <rect key="frame" x="50" y="90" width="220" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,15 +129,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EVD-Yg-Mja" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="06r-F0-5kv"/>
                             <constraint firstItem="EDc-zi-wPZ" firstAttribute="leading" secondItem="ZXv-ZB-TJ9" secondAttribute="leading" id="6Z9-Vr-QQP"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="leading" secondItem="FaE-xH-skd" secondAttribute="leading" id="76d-Qp-dhi"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="FaE-xH-skd" secondAttribute="leading" id="Bcy-Ke-cza"/>
                             <constraint firstItem="4r4-Nd-Cb5" firstAttribute="top" secondItem="Kmo-Fk-zni" secondAttribute="bottom" constant="14" id="DuC-Kx-XQb"/>
+                            <constraint firstItem="CRf-nT-n8M" firstAttribute="top" secondItem="EVD-Yg-Mja" secondAttribute="bottom" id="En6-e0-Mtq"/>
                             <constraint firstItem="EDc-zi-wPZ" firstAttribute="top" secondItem="aVd-8H-VGe" secondAttribute="bottom" constant="14" id="I0C-Rv-p9b"/>
+                            <constraint firstItem="EVD-Yg-Mja" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KRK-Tk-Sod"/>
                             <constraint firstItem="aVd-8H-VGe" firstAttribute="leading" secondItem="EDc-zi-wPZ" secondAttribute="leading" id="KXM-Ao-hkQ"/>
                             <constraint firstItem="Kmo-Fk-zni" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="UJv-yf-Ap7"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="leading" secondItem="4r4-Nd-Cb5" secondAttribute="leading" id="b5v-Fc-8RB"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cmH-mM-JC7"/>
+                            <constraint firstAttribute="trailing" secondItem="EVD-Yg-Mja" secondAttribute="trailing" id="e7S-AE-o5p"/>
                             <constraint firstItem="Kmo-Fk-zni" firstAttribute="top" secondItem="DiY-DK-dxB" secondAttribute="bottom" constant="26" id="fZc-oP-XS3"/>
                             <constraint firstItem="FaE-xH-skd" firstAttribute="top" secondItem="Ct0-Re-RXf" secondAttribute="bottom" constant="14" id="gNI-bM-pQt"/>
                             <constraint firstItem="Ct0-Re-RXf" firstAttribute="top" secondItem="4r4-Nd-Cb5" secondAttribute="bottom" constant="14" id="tVh-Qh-z4I"/>
@@ -154,7 +163,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="gradientView" destination="kh9-bI-dsS" id="iXw-Ja-02q"/>
+                        <outlet property="imageView" destination="EVD-Yg-Mja" id="8HY-ER-9JK"/>
                         <outlet property="topSpacingConstraint" destination="fZc-oP-XS3" id="q9d-bp-0GH"/>
                         <outletCollection property="buttonSpacingConstraints" destination="xj0-z7-CSS" id="LtD-fD-RHa"/>
                         <outletCollection property="buttonSpacingConstraints" destination="gNI-bM-pQt" id="VVO-w9-Ffg"/>
