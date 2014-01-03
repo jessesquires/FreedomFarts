@@ -10,6 +10,7 @@
 
 #import "FFXViewController.h"
 
+#import <Social/Social.h>
 #import <JSQSystemSoundPlayer/JSQSystemSoundPlayer.h>
 #import <BButton/BButton.h>
 #import <SAMGradientView/SAMGradientView.h>
@@ -19,17 +20,21 @@
 #import "UIColor+FreedomFarts.h"
 #import "UIDevice+FreedomFarts.h"
 #import "UIView+FreedomFarts.h"
+#import "UIAlertView+FreedomFarts.h"
 
 static NSString * const kFFXActionFacebook = @"Facebook";
 static NSString * const kFFXActionTwitter = @"Twitter";
 
 @interface FFXViewController () <UIActionSheetDelegate>
 
+@property (assign, nonatomic) BOOL isFirstLaunch;
 @property (copy, nonatomic) NSString *currentSound;
 
-- (void)presentWelcomeView;
+- (void)ffx_presentWelcomeView;
 
-- (void)toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender;
+- (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender;
+
+- (void)ffx_displaySocialComposerSheetwithService:(NSString *)service;
 
 @end
 
@@ -42,7 +47,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.isFirstLaunch = YES;
     self.gradientView.gradientColors = @[
                                          [UIColor ffx_patrioticBlueLight],
                                          [UIColor ffx_patrioticBlue]
@@ -67,7 +72,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self presentWelcomeView];
+    [self ffx_presentWelcomeView];
 }
 
 - (void)dealloc
@@ -88,14 +93,14 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (IBAction)fartPressed:(UIButton *)sender
 {
     [self.view bringSubviewToFront:sender];
-    [self toggleButtonsEnabled:NO sender:sender];
+    [self ffx_toggleButtonsEnabled:NO sender:sender];
     
     self.currentSound = [sender.titleLabel.text lowercaseString];
     
     [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:self.currentSound
                                                  extension:kJSQSystemSoundTypeWAV
                                                 completion:^{
-                                                    [self toggleButtonsEnabled:YES sender:nil];
+                                                    [self ffx_toggleButtonsEnabled:YES sender:nil];
                                                 }];
 }
 
@@ -109,11 +114,11 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (IBAction)actionPressed:(UIBarButtonItem *)sender
 {
     [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-high" extension:kJSQSystemSoundTypeWAV];
-    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Share"
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Tell your friends that you've joined the Fart Party! In God, We Fart."
                                                        delegate:self
-                                              cancelButtonTitle:@"Cancel"
-                                         destructiveButtonTitle:nil
-                                              otherButtonTitles:kFFXActionFacebook, kFFXActionTwitter, nil];
+                                              cancelButtonTitle:nil
+                                         destructiveButtonTitle:@"I only fart in private."
+                                              otherButtonTitles:@"Facebook", @"Twitter", nil];
     [sheet showFromBarButtonItem:sender animated:YES];
 }
 
@@ -127,7 +132,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     if (motion == UIEventSubtypeMotionShake && self.currentSound) {
-        [self toggleButtonsEnabled:YES sender:nil];
+        [self ffx_toggleButtonsEnabled:YES sender:nil];
         [[JSQSystemSoundPlayer sharedPlayer] stopSoundWithFilename:self.currentSound];
     }
 }
@@ -136,18 +141,51 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    if (buttonIndex == 1) {
+        [self ffx_displaySocialComposerSheetwithService:SLServiceTypeFacebook];
+    }
+    else if (buttonIndex == 2) {
+        [self ffx_displaySocialComposerSheetwithService:SLServiceTypeTwitter];
+    }
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-long" extension:kJSQSystemSoundTypeWAV];
+}
+
+#pragma mark - Social
+
+- (void)ffx_displaySocialComposerSheetwithService:(NSString *)service
+{
+    if (![SLComposeViewController isAvailableForServiceType:service]) {
+        if ([service isEqualToString:SLServiceTypeFacebook]) {
+            [UIAlertView ffx_showNoFacebookAlert];
+        }
+        else if ([service isEqualToString:SLServiceTypeTwitter]) {
+            [UIAlertView ffx_showNoTwitterAlert];
+        }
+        return;
+    }
     
+    SLComposeViewController *composer = [SLComposeViewController composeViewControllerForServiceType:service];
+    [composer setInitialText:@"I've joined the Fart Party! And you can too! #FreedomFartsApp"];
+    [composer addURL:[NSURL URLWithString:@"https://freedomfartsapp.com"]];
+    [self presentViewController:composer animated:YES completion:nil];
 }
 
 #pragma mark - Utilities
 
-- (void)presentWelcomeView
+- (void)ffx_presentWelcomeView
 {
-    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-low" extension:kJSQSystemSoundTypeWAV];
-    [FFXWelcomeViewController presentWelcomeViewFromViewController:self];
+    if (self.isFirstLaunch) {
+        [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-low" extension:kJSQSystemSoundTypeWAV];
+        [FFXWelcomeViewController presentWelcomeViewFromViewController:self];
+        self.isFirstLaunch = NO;
+    }
 }
 
-- (void)toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender
+- (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender
 {
     self.navigationItem.leftBarButtonItem.enabled = enabled;
     self.navigationItem.rightBarButtonItem.enabled = enabled;
