@@ -39,8 +39,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.welcomeLabel.textColor = [UIColor ffx_patrioticBlue];
-    self.electionLabel.textColor = [UIColor ffx_patrioticRed];
+    self.welcomeLabel.textColor = [UIColor ffx_patrioticBlueColor];
+    self.electionLabel.textColor = [UIColor ffx_patrioticRedColor];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ffx_handleTapGesture:)];
     tap.numberOfTapsRequired = 1;

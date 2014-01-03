@@ -48,17 +48,15 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     [super viewDidLoad];
     self.isFirstLaunch = YES;
-    self.gradientView.gradientColors = @[
-                                         [UIColor ffx_patrioticBlueLight],
-                                         [UIColor ffx_patrioticBlue]
-                                         ];
+    
+    self.gradientView.gradientColors = @[];
     
     for (BButton *eachBtn in self.buttons) {
         if ([eachBtn.titleLabel.text isEqualToString:@"Vote!"]) {
             [eachBtn setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
         }
         else {
-            [eachBtn setType:BButtonTypeDanger];
+            [eachBtn setColor:[UIColor ffx_patrioticRedColor]];
         }
     }
     
@@ -79,6 +77,18 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     _gradientView = nil;
     _buttons = nil;
+}
+
+#pragma mark - Status bar
+
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - Actions
