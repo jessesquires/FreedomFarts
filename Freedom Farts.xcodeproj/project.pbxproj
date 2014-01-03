@@ -13,6 +13,10 @@
 		88353A661874FC9600066E59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A651874FC9600066E59 /* QuartzCore.framework */; };
 		88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */; };
 		88353A6C1875105900066E59 /* UIView+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A6B1875105900066E59 /* UIView+FreedomFarts.m */; };
+		88353A711876857100066E59 /* fart-high.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A6D1876857100066E59 /* fart-high.wav */; };
+		88353A721876857100066E59 /* fart-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A6E1876857100066E59 /* fart-long.wav */; };
+		88353A731876857100066E59 /* fart-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A6F1876857100066E59 /* fart-low.wav */; };
+		88353A741876857100066E59 /* fart-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A701876857100066E59 /* fart-short.wav */; };
 		885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */; };
 		88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
 		88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDC186CBF85001FC35E /* CoreGraphics.framework */; };
@@ -56,6 +60,10 @@
 		88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FreedomFarts.m"; sourceTree = "<group>"; };
 		88353A6A1875105900066E59 /* UIView+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FreedomFarts.h"; sourceTree = "<group>"; };
 		88353A6B1875105900066E59 /* UIView+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FreedomFarts.m"; sourceTree = "<group>"; };
+		88353A6D1876857100066E59 /* fart-high.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-high.wav"; sourceTree = "<group>"; };
+		88353A6E1876857100066E59 /* fart-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-long.wav"; sourceTree = "<group>"; };
+		88353A6F1876857100066E59 /* fart-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-low.wav"; sourceTree = "<group>"; };
+		88353A701876857100066E59 /* fart-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-short.wav"; sourceTree = "<group>"; };
 		8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FreedomFarts.h"; sourceTree = "<group>"; };
 		8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FreedomFarts.m"; sourceTree = "<group>"; };
 		88F86ED7186CBF85001FC35E /* Freedom Farts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freedom Farts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +209,10 @@
 		88F86F12186CE600001FC35E /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				88353A6D1876857100066E59 /* fart-high.wav */,
+				88353A6E1876857100066E59 /* fart-long.wav */,
+				88353A6F1876857100066E59 /* fart-low.wav */,
+				88353A701876857100066E59 /* fart-short.wav */,
 				88F86F13186CE600001FC35E /* america the fart.wav */,
 				88F86F14186CE600001FC35E /* battle farts of the republic.wav */,
 				88F86F15186CE600001FC35E /* fart spangled banner.wav */,
@@ -293,15 +305,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88353A741876857100066E59 /* fart-short.wav in Resources */,
 				88F86F1A186CE600001FC35E /* battle farts of the republic.wav in Resources */,
 				88F86F1C186CE600001FC35E /* god fart america.wav in Resources */,
 				88F86F19186CE600001FC35E /* america the fart.wav in Resources */,
+				88353A721876857100066E59 /* fart-long.wav in Resources */,
 				88353A641874FB7200066E59 /* FFXWelcomeViewController.xib in Resources */,
 				88F86EF6186CBF85001FC35E /* Images.xcassets in Resources */,
+				88353A711876857100066E59 /* fart-high.wav in Resources */,
 				88F86F1D186CE600001FC35E /* my fart tis of thee.wav in Resources */,
 				88F86EEE186CBF85001FC35E /* Main.storyboard in Resources */,
 				88F86EE5186CBF85001FC35E /* InfoPlist.strings in Resources */,
 				88F86F1E186CE600001FC35E /* yankee farter.wav in Resources */,
+				88353A731876857100066E59 /* fart-low.wav in Resources */,
 				88F86F1B186CE600001FC35E /* fart spangled banner.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

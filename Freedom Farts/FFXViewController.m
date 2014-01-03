@@ -80,6 +80,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (IBAction)votePressed:(UIButton *)sender
 {
+    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-short" extension:kJSQSystemSoundTypeWAV];
     SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://vote411.org"];
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -100,12 +101,14 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (IBAction)hexedBitsPressed:(UIBarButtonItem *)sender
 {
+    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-high" extension:kJSQSystemSoundTypeWAV];
     SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://hexedbits.com"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)actionPressed:(UIBarButtonItem *)sender
 {
+    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-high" extension:kJSQSystemSoundTypeWAV];
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Share"
                                                        delegate:self
                                               cancelButtonTitle:@"Cancel"
@@ -140,6 +143,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (void)presentWelcomeView
 {
+    [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-low" extension:kJSQSystemSoundTypeWAV];
     [FFXWelcomeViewController presentWelcomeViewFromViewController:self];
 }
 
