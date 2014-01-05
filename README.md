@@ -18,7 +18,7 @@ Politics has become so absurb in the United States, so I made this app to reflec
 
 ### Donate
 
-Donate via [Square Cash](https://square.com/cash). All proceeds support the open-source projects of [@jessesquires](http://bit.ly/jsgithub) and [@hexedbits](http://bit.ly/hbgithub).
+Donate to the Fart Party via [Square Cash](https://square.com/cash). All proceeds support the open-source projects of [@jessesquires](http://bit.ly/jsgithub) and [@hexedbits](http://bit.ly/hbgithub).
 
 <h4><a href="mailto:jesse.squires.developer@gmail.com?cc=cash@square.com&subject=$1&body=Thanks for Freedom Farts! I'm joining the Fart Party!">Send $1</a> <em>Join the Fart Party!</em></h4>
 
