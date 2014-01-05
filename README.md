@@ -28,7 +28,7 @@ Code by [Jesse Squires](https://twitter.com/jesse_squires).
 
 Sound by [Zak Denham](http://onebyoneaudio.com).
 
-Icon by [Michael Schultz](http://twitter.com/michaelschultz).
+Icon by [Michael Schultz](http://michaelschultz.com).
 
 ### Open-source controls
 
