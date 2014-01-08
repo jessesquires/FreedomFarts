@@ -28,6 +28,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 @interface FFXViewController () <UIActionSheetDelegate>
 
 @property (assign, nonatomic) BOOL isFirstLaunch;
+@property (assign, nonatomic) BOOL isFirstFart;
 @property (copy, nonatomic) NSString *currentSound;
 
 - (void)ffx_presentWelcomeView;
@@ -48,6 +49,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     [super viewDidLoad];
     self.isFirstLaunch = YES;
+    self.isFirstFart = YES;
     
     self.imageView.image = [[UIImage imageNamed:@"capitol"] ffx_blurredImageWithBlurValue:0.6f];
     self.imageView.contentMode = UIViewContentModeScaleToFill;
@@ -73,6 +75,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     [super viewDidAppear:animated];
     [self ffx_presentWelcomeView];
+    self.navigationItem.prompt = nil;
 }
 
 #pragma mark - Status bar
@@ -193,6 +196,14 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender
 {
+    if (self.isFirstFart && !enabled && sender) {
+        self.navigationItem.prompt = @"shake to stop";
+        self.isFirstFart = NO;
+    }
+    else {
+        self.navigationItem.prompt = nil;
+    }
+    
     self.navigationItem.leftBarButtonItem.enabled = enabled;
     self.navigationItem.rightBarButtonItem.enabled = enabled;
     
