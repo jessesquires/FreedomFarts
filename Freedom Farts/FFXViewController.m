@@ -123,7 +123,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Tell your friends that you've joined the Fart Party! In God, We Fart."
                                                        delegate:self
                                               cancelButtonTitle:nil
-                                         destructiveButtonTitle:@"I only fart in private."
+                                         destructiveButtonTitle:@"I only fart in private"
                                               otherButtonTitles:@"Facebook", @"Twitter", nil];
     [sheet showFromBarButtonItem:sender animated:YES];
 }
