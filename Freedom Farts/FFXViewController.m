@@ -176,7 +176,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     
     SLComposeViewController *composer = [SLComposeViewController composeViewControllerForServiceType:service];
     [composer setInitialText:@"I've joined the Fart Party! And you can too! #FreedomFartsApp"];
-    [composer addURL:[NSURL URLWithString:@"https://freedomfartsapp.com"]];
+    [composer addURL:[NSURL URLWithString:@"https://freedomfarts.com"]];
     [self presentViewController:composer animated:YES completion:nil];
 }
 
