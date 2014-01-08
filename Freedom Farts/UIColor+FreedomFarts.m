@@ -3,9 +3,9 @@
 //  http://www.hexedbits.com
 //
 //
-//  The MIT License
-//  Copyright (c) 2012 Jesse Squires
-//  http://opensource.org/licenses/MIT
+//  The GPL-3.0 License
+//  Copyright (c) 2014 Jesse Squires
+//  http://www.gnu.org/licenses
 //
 
 #import "UIColor+FreedomFarts.h"
