@@ -146,6 +146,16 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     }
 }
 
+#pragma mark - Core animation delegate
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    FFXAnimationCompletionBlock block = [anim valueForKey:kFFXAnimationKeyCompletionBlock];
+    if (block) {
+        block(flag);
+    }
+}
+
 #pragma mark - Action sheet delegate
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -212,7 +222,9 @@ static NSString * const kFFXActionTwitter = @"Twitter";
         
         if (!sender || (sender && ![eachButton isEqual:sender])) {
             eachButton.enabled = enabled;
-            [eachButton ffx_fadeToValue:enabled ? 1.0f : 0.25f];
+            [eachButton ffx_fadeToValue:enabled ? 1.0f : 0.25f
+                               delegate:nil
+                             completion:nil];
         }
     }
 }

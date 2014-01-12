@@ -10,8 +10,14 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const kFFXAnimationKeyView;
+extern NSString * const kFFXAnimationKeyCompletionBlock;
+
+typedef void (^FFXAnimationCompletionBlock)(BOOL finished);
+
+
 @interface UIView (FreedomFarts)
 
-- (void)ffx_fadeToValue:(CGFloat)val;
+- (void)ffx_fadeToValue:(CGFloat)val delegate:(id)delegate completion:(FFXAnimationCompletionBlock)block;
 
 @end

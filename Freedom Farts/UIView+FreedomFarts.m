@@ -10,9 +10,13 @@
 
 #import "UIView+FreedomFarts.h"
 
+NSString * const kFFXAnimationKeyView = @"kFFXAnimationKeyView";
+NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionBlock";
+
+
 @implementation UIView (FreedomFarts)
 
-- (void)ffx_fadeToValue:(CGFloat)val
+- (void)ffx_fadeToValue:(CGFloat)val delegate:(id)delegate completion:(FFXAnimationCompletionBlock)block;
 {
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
@@ -22,6 +26,13 @@
     anim.removedOnCompletion = NO;
     anim.fillMode = kCAFillModeForwards;
     anim.toValue = [NSNumber numberWithFloat:val];
+    anim.delegate = delegate;
+    [anim setValue:self forKey:kFFXAnimationKeyView];
+    
+    if (block) {
+        [anim setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+    }
+    
     [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyFade"];
 }
 
