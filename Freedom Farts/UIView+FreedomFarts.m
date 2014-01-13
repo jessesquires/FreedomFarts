@@ -59,4 +59,46 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyPulse"];
 }
 
+- (void)ffx_wiggleForDuration:(CFTimeInterval)duration
+                  repeatCount:(CGFloat)repeatCount
+                     delegate:(id)delegate
+                   completion:(FFXAnimationCompletionBlock)block
+{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    anim.duration = duration;
+    anim.repeatCount = repeatCount;
+    anim.autoreverses = YES;
+    anim.removedOnCompletion = YES;
+    anim.fromValue = [NSNumber numberWithFloat:M_PI * -0.05f];
+    anim.toValue = [NSNumber numberWithFloat:M_PI * 0.05f];
+    anim.delegate = delegate;
+    [anim setValue:self forKey:kFFXAnimationKeyView];
+    
+    CABasicAnimation *animEnd = [anim copy];
+    animEnd.repeatCount = 1.0f;
+    animEnd.fromValue = nil;
+    animEnd.toValue = [NSNumber numberWithFloat:0.0f];
+    animEnd.autoreverses = NO;
+    animEnd.removedOnCompletion = NO;
+    animEnd.fillMode = kCAFillModeForwards;
+
+    if (block) {
+        [animEnd setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+    }
+    
+    [anim setValue:^(BOOL finished) { [self.layer addAnimation:animEnd forKey:@"kFFXAnimationKeyWiggleEnd"]; }
+            forKey:kFFXAnimationKeyCompletionBlock];
+    
+    CABasicAnimation *animBegin = [animEnd copy];
+    animBegin.repeatCount = 1.0f;
+    animBegin.fromValue = nil;
+    animBegin.toValue = [NSNumber numberWithFloat:[anim.fromValue floatValue]];
+    
+    [animBegin setValue:^(BOOL finished) { [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyWiggleMain"]; }
+                 forKey:kFFXAnimationKeyCompletionBlock];
+    
+    [self.layer addAnimation:animBegin forKey:@"kFFXAnimationKeyWiggleBegin"];
+}
+
 @end
