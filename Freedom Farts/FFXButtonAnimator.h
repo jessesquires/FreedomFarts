@@ -16,4 +16,6 @@
 
 - (void)animateGodFartAmerica:(UIButton *)button delegate:(id)delegate;
 
+- (void)animateYankeeFarter:(UIButton *)button delegate:(id)delegate;
+
 @end

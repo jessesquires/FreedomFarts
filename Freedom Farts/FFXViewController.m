@@ -234,6 +234,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
             break;
             
         case 6:
+            [self.buttonAnimator animateYankeeFarter:button delegate:self];
             break;
     }
 }

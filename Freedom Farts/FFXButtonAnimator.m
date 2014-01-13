@@ -38,4 +38,11 @@
     }];
 }
 
+- (void)animateYankeeFarter:(UIButton *)button delegate:(id)delegate
+{
+    [button ffx_squeezeForDuration:0.33 repeatCount:18.0f delegate:self completion:^(BOOL finished) {
+        [button.layer removeAllAnimations];
+    }];
+}
+
 @end

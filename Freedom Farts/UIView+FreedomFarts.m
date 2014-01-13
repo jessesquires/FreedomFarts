@@ -138,4 +138,27 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyStretch"];
 }
 
+- (void)ffx_squeezeForDuration:(CFTimeInterval)duration
+                   repeatCount:(CGFloat)repeatCount
+                      delegate:(id)delegate
+                    completion:(FFXAnimationCompletionBlock)block
+{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    anim.duration = duration;
+    anim.repeatCount = repeatCount;
+    anim.autoreverses = YES;
+    anim.removedOnCompletion = YES;
+    anim.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)];
+    anim.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.2f, 0.9f, 1.0f)];
+    anim.delegate = delegate;
+    [anim setValue:self forKey:kFFXAnimationKeyView];
+    
+    if (block) {
+        [anim setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+    }
+    
+    [self.layer addAnimation:anim forKey:@"kFFXAnimationKeySqueeze"];
+}
+
 @end
