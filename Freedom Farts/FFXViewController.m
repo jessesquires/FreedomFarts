@@ -31,6 +31,8 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 @property (assign, nonatomic) BOOL isFirstFart;
 @property (copy, nonatomic) NSString *currentSound;
 
+- (void)ffx_animateFartButton:(UIButton *)button;
+
 - (void)ffx_presentWelcomeView;
 
 - (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender;
@@ -55,11 +57,14 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     self.imageView.contentMode = UIViewContentModeScaleToFill;
     self.imageView.layer.opacity = 0.6f;
     
-    for (BButton *eachBtn in self.buttons) {
+    for (NSUInteger i = 0; i < [self.buttons count]; i++) {
+        BButton *eachBtn = [self.buttons objectAtIndex:i];
+        
         if ([eachBtn.titleLabel.text isEqualToString:@"Vote!"]) {
             [eachBtn setColor:[UIColor colorWithWhite:0.25f alpha:1.0f]];
         }
         else {
+            eachBtn.tag = i;
             [eachBtn setColor:[UIColor ffx_patrioticRedColor]];
         }
     }
@@ -95,8 +100,12 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (IBAction)votePressed:(UIButton *)sender
 {
     [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-short" extension:kJSQSystemSoundTypeWAV];
+    
     SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://vote411.org"];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    [sender ffx_pulseForDuration:0.15 repeatCount:1.0 delegate:self completion:^(BOOL finished) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
 }
 
 - (IBAction)fartPressed:(UIButton *)sender
@@ -111,6 +120,8 @@ static NSString * const kFFXActionTwitter = @"Twitter";
                                                 completion:^{
                                                     [self ffx_toggleButtonsEnabled:YES sender:nil];
                                                 }];
+    
+    [self ffx_animateFartButton:sender];
 }
 
 - (IBAction)hexedBitsPressed:(UIBarButtonItem *)sender
@@ -194,6 +205,29 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 }
 
 #pragma mark - Utilities
+
+- (void)ffx_animateFartButton:(UIButton *)button
+{
+    switch (button.tag) {
+        case 1:
+            break;
+            
+        case 2:
+            break;
+            
+        case 3:
+            break;
+            
+        case 4:
+            break;
+            
+        case 5:
+            break;
+            
+        case 6:
+            break;
+    }
+}
 
 - (void)ffx_presentWelcomeView
 {

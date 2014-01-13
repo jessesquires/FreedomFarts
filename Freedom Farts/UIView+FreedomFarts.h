@@ -20,4 +20,9 @@ typedef void (^FFXAnimationCompletionBlock)(BOOL finished);
 
 - (void)ffx_fadeToValue:(CGFloat)val delegate:(id)delegate completion:(FFXAnimationCompletionBlock)block;
 
+- (void)ffx_pulseForDuration:(CFTimeInterval)duration
+                 repeatCount:(CGFloat)repeatCount
+                    delegate:(id)delegate
+                  completion:(FFXAnimationCompletionBlock)block;
+
 @end

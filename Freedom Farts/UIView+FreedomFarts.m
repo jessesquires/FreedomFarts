@@ -16,7 +16,7 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
 
 @implementation UIView (FreedomFarts)
 
-- (void)ffx_fadeToValue:(CGFloat)val delegate:(id)delegate completion:(FFXAnimationCompletionBlock)block;
+- (void)ffx_fadeToValue:(CGFloat)val delegate:(id)delegate completion:(FFXAnimationCompletionBlock)block
 {
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
@@ -34,6 +34,29 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     }
     
     [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyFade"];
+}
+
+- (void)ffx_pulseForDuration:(CFTimeInterval)duration
+                 repeatCount:(CGFloat)repeatCount
+                    delegate:(id)delegate
+                  completion:(FFXAnimationCompletionBlock)block
+{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    anim.duration = duration;
+    anim.repeatCount = repeatCount;
+    anim.autoreverses = YES;
+    anim.removedOnCompletion = YES;
+    anim.fromValue = [NSNumber numberWithFloat:1.0f];
+    anim.toValue = [NSNumber numberWithFloat:1.24f];
+    anim.delegate = delegate;
+    [anim setValue:self forKey:kFFXAnimationKeyView];
+    
+    if (block) {
+        [anim setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+    }
+    
+    [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyPulse"];
 }
 
 @end
