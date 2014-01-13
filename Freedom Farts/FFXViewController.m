@@ -15,10 +15,11 @@
 #import <BButton/BButton.h>
 #import <SVWebViewController/SVWebViewController.h>
 
+#import "FFXButtonAnimator.h"
 #import "FFXWelcomeViewController.h"
+#import "UIView+FreedomFarts.h"
 #import "UIColor+FreedomFarts.h"
 #import "UIDevice+FreedomFarts.h"
-#import "UIView+FreedomFarts.h"
 #import "UIAlertView+FreedomFarts.h"
 #import "UIImage+FreedomFarts.h"
 
@@ -27,6 +28,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 @interface FFXViewController () <UIActionSheetDelegate>
 
+@property (strong, nonatomic) FFXButtonAnimator *buttonAnimator;
 @property (assign, nonatomic) BOOL isFirstLaunch;
 @property (assign, nonatomic) BOOL isFirstFart;
 @property (copy, nonatomic) NSString *currentSound;
@@ -50,6 +52,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.buttonAnimator = [FFXButtonAnimator new];
     self.isFirstLaunch = YES;
     self.isFirstFart = YES;
     
@@ -214,22 +217,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     switch (button.tag) {
         case 1:
-        {
-            [button ffx_pulseForDuration:0.5 repeatCount:2.0f delegate:self completion:^(BOOL finished) {
-                if (finished) {
-                    double delayInSeconds = 0.18;
-                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-                        [button ffx_wiggleForDuration:0.62 repeatCount:11.0f delegate:self completion:^(BOOL finished) {
-                            [button.layer removeAllAnimations];
-                        }];
-                    });
-                }
-                else {
-                    [button.layer removeAllAnimations];
-                }
-            }];
-        }
+            [self.buttonAnimator animateFartSpangledBanner:button delegate:self];
             break;
             
         case 2:

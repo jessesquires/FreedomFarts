@@ -22,6 +22,7 @@
 		88353A7C1876A21C00066E59 /* UIImage+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */; };
 		88353A7E1876A41D00066E59 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A7D1876A41D00066E59 /* Accelerate.framework */; };
 		885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */; };
+		887A87DA18837CCA000ED7A9 /* FFXButtonAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 887A87D918837CCA000ED7A9 /* FFXButtonAnimator.m */; };
 		88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
 		88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDC186CBF85001FC35E /* CoreGraphics.framework */; };
 		88F86EDF186CBF85001FC35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDE186CBF85001FC35E /* UIKit.framework */; };
@@ -76,6 +77,8 @@
 		88353A7D1876A41D00066E59 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FreedomFarts.h"; sourceTree = "<group>"; };
 		8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FreedomFarts.m"; sourceTree = "<group>"; };
+		887A87D818837CCA000ED7A9 /* FFXButtonAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFXButtonAnimator.h; sourceTree = "<group>"; };
+		887A87D918837CCA000ED7A9 /* FFXButtonAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFXButtonAnimator.m; sourceTree = "<group>"; };
 		88F86ED7186CBF85001FC35E /* Freedom Farts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freedom Farts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F86EDA186CBF85001FC35E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88F86EDC186CBF85001FC35E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 			children = (
 				88F86EE9186CBF85001FC35E /* FFXAppDelegate.h */,
 				88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */,
+				887A87D818837CCA000ED7A9 /* FFXButtonAnimator.h */,
+				887A87D918837CCA000ED7A9 /* FFXButtonAnimator.m */,
 				88F86EF2186CBF85001FC35E /* FFXViewController.h */,
 				88F86EF3186CBF85001FC35E /* FFXViewController.m */,
 				88353A621874FB7200066E59 /* FFXWelcomeViewController.h */,
@@ -397,6 +402,7 @@
 				885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */,
 				88353A7C1876A21C00066E59 /* UIImage+FreedomFarts.m in Sources */,
 				88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */,
+				887A87DA18837CCA000ED7A9 /* FFXButtonAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
