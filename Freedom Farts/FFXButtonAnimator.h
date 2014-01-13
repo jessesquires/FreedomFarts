@@ -14,4 +14,6 @@
 
 - (void)animateFartSpangledBanner:(UIButton *)button delegate:(id)delegate;
 
+- (void)animateGodFartAmerica:(UIButton *)button delegate:(id)delegate;
+
 @end

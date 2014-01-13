@@ -31,4 +31,11 @@
     }];
 }
 
+- (void)animateGodFartAmerica:(UIButton *)button delegate:(id)delegate
+{
+    [button ffx_stretchForDuration:1.1 repeatCount:14.0f delegate:self completion:^(BOOL finished) {
+        [button.layer removeAllAnimations];
+    }];
+}
+
 @end

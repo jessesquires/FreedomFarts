@@ -30,4 +30,9 @@ typedef void (^FFXAnimationCompletionBlock)(BOOL finished);
                      delegate:(id)delegate
                    completion:(FFXAnimationCompletionBlock)block;
 
+- (void)ffx_stretchForDuration:(CFTimeInterval)duration
+                   repeatCount:(CGFloat)repeatCount
+                      delegate:(id)delegate
+                    completion:(FFXAnimationCompletionBlock)block;
+
 @end

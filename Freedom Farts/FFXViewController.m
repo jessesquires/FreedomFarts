@@ -230,6 +230,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
             break;
             
         case 5:
+            [self.buttonAnimator animateGodFartAmerica:button delegate:self];
             break;
             
         case 6:
