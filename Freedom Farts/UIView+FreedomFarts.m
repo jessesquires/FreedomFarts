@@ -87,7 +87,14 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
         [animEnd setValue:block forKey:kFFXAnimationKeyCompletionBlock];
     }
     
-    [anim setValue:^(BOOL finished) { [self.layer addAnimation:animEnd forKey:@"kFFXAnimationKeyWiggleEnd"]; }
+    [anim setValue:^(BOOL finished) {
+        if (finished) {
+            [self.layer addAnimation:animEnd forKey:@"kFFXAnimationKeyWiggleEnd"];
+        }
+        else {
+            [self.layer removeAllAnimations];
+        }
+    }
             forKey:kFFXAnimationKeyCompletionBlock];
     
     CABasicAnimation *animBegin = [animEnd copy];
@@ -95,7 +102,14 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     animBegin.fromValue = nil;
     animBegin.toValue = [NSNumber numberWithFloat:[anim.fromValue floatValue]];
     
-    [animBegin setValue:^(BOOL finished) { [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyWiggleMain"]; }
+    [animBegin setValue:^(BOOL finished) {
+        if (finished) {
+            [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyWiggleMain"];
+        }
+        else {
+            [self.layer removeAllAnimations];
+        }
+    }
                  forKey:kFFXAnimationKeyCompletionBlock];
     
     [self.layer addAnimation:animBegin forKey:@"kFFXAnimationKeyWiggleBegin"];

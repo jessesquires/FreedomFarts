@@ -154,6 +154,10 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     if (motion == UIEventSubtypeMotionShake && self.currentSound) {
         [self ffx_toggleButtonsEnabled:YES sender:nil];
         [[JSQSystemSoundPlayer sharedPlayer] stopSoundWithFilename:self.currentSound];
+        
+        for (BButton *eachBtn in self.buttons) {
+            [eachBtn.layer removeAllAnimations];
+        }
     }
 }
 
@@ -212,13 +216,18 @@ static NSString * const kFFXActionTwitter = @"Twitter";
         case 1:
         {
             [button ffx_pulseForDuration:0.5 repeatCount:2.0f delegate:self completion:^(BOOL finished) {
-                double delayInSeconds = 0.18;
-                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-                    [button ffx_wiggleForDuration:0.62 repeatCount:11.0f delegate:self completion:^(BOOL finished) {
-                        [button.layer removeAllAnimations];
-                    }];
-                });
+                if (finished) {
+                    double delayInSeconds = 0.18;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+                        [button ffx_wiggleForDuration:0.62 repeatCount:11.0f delegate:self completion:^(BOOL finished) {
+                            [button.layer removeAllAnimations];
+                        }];
+                    });
+                }
+                else {
+                    [button.layer removeAllAnimations];
+                }
             }];
         }
             break;
