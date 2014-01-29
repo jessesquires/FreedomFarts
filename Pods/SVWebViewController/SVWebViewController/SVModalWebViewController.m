@@ -9,6 +9,13 @@
 #import "SVModalWebViewController.h"
 #import "SVWebViewController.h"
 
+@interface SVWebViewController ()
+
+- (void)doneButtonClicked:(id)sender;
+
+@end
+
+
 @interface SVModalWebViewController ()
 
 @property (nonatomic, strong) SVWebViewController *webViewController;

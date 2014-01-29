@@ -41,9 +41,15 @@
 #pragma mark - Initialization
 
 - (void)dealloc {
-    [self.webView stopLoading];
+    [_webView stopLoading];
  	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    self.webView.delegate = nil;
+    _webView.delegate = nil;
+    _webView = nil;
+    _backBarButtonItem = nil;
+    _forwardBarButtonItem = nil;
+    _refreshBarButtonItem = nil;
+    _stopBarButtonItem = nil;
+    _actionBarButtonItem = nil;
 }
 
 - (id)initWithAddress:(NSString *)urlString {
@@ -53,7 +59,7 @@
 - (id)initWithURL:(NSURL*)pageURL {
     
     if(self = [super init]) {
-        self.URL = pageURL;
+        _URL = pageURL;
     }
     
     return self;
@@ -73,16 +79,6 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     [self updateToolbarItems];
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    self.webView = nil;
-    _backBarButtonItem = nil;
-    _forwardBarButtonItem = nil;
-    _refreshBarButtonItem = nil;
-    _stopBarButtonItem = nil;
-    _actionBarButtonItem = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -172,11 +168,11 @@
 #pragma mark - Toolbar
 
 - (void)updateToolbarItems {
-    self.backBarButtonItem.enabled = self.self.webView.canGoBack;
-    self.forwardBarButtonItem.enabled = self.self.webView.canGoForward;
-    self.actionBarButtonItem.enabled = !self.self.webView.isLoading;
+    self.backBarButtonItem.enabled = self.webView.canGoBack;
+    self.forwardBarButtonItem.enabled = self.webView.canGoForward;
+    self.actionBarButtonItem.enabled = !self.webView.isLoading;
     
-    UIBarButtonItem *refreshStopBarButtonItem = self.self.webView.isLoading ? self.stopBarButtonItem : self.refreshBarButtonItem;
+    UIBarButtonItem *refreshStopBarButtonItem = self.webView.isLoading ? self.stopBarButtonItem : self.refreshBarButtonItem;
     
     UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
@@ -264,7 +260,7 @@
 - (void)actionButtonClicked:(id)sender {
     NSArray *activities = @[[SVWebViewControllerActivitySafari new], [SVWebViewControllerActivityChrome new]];
     
-    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:@[self.self.webView.request.URL] applicationActivities:activities];
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:@[self.webView.request.URL] applicationActivities:activities];
     [self presentViewController:activityController animated:YES completion:nil];
 }
 

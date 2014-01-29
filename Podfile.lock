@@ -2,18 +2,22 @@ PODS:
   - BButton (3.2.3)
   - JSQSystemSoundPlayer (1.4.0)
   - MJPopupViewController (0.4)
-  - SVWebViewController (1.0)
+  - SVWebViewController (1.2)
 
 DEPENDENCIES:
   - BButton (= 3.2.3)
   - JSQSystemSoundPlayer (= 1.4.0)
   - MJPopupViewController (= 0.4)
-  - SVWebViewController (= 1.0)
+  - SVWebViewController (from `https://github.com/jessesquires/SVWebViewController.git`)
+
+EXTERNAL SOURCES:
+  SVWebViewController:
+    :git: https://github.com/jessesquires/SVWebViewController.git
 
 SPEC CHECKSUMS:
   BButton: b405745cd7ccc9444c696b8690fb79541623766a
   JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
   MJPopupViewController: 4cd0badf3dae541017e0e16e2d2c7578d9224052
-  SVWebViewController: e576371f7015bce92c97c304c32336700064847b
+  SVWebViewController: 1b40ce036aefb7c386b0f625252cf61eecfbf4a3
 
 COCOAPODS: 0.29.0
