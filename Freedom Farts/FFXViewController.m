@@ -211,12 +211,15 @@ static NSString * const kFFXActionTwitter = @"Twitter";
             break;
             
         case 2:
+            [self.buttonAnimator animateAmericaTheFart:button];
             break;
             
         case 3:
+            [self.buttonAnimator animateMyFartTisOfThee:button];
             break;
             
         case 4:
+            [self.buttonAnimator animateBattleFarts:button];
             break;
             
         case 5:

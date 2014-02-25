@@ -14,6 +14,12 @@
 
 - (void)animateFartSpangledBanner:(UIButton *)button;
 
+- (void)animateAmericaTheFart:(UIButton *)button;
+
+- (void)animateMyFartTisOfThee:(UIButton *)button;
+
+- (void)animateBattleFarts:(UIButton *)button;
+
 - (void)animateGodFartAmerica:(UIButton *)button;
 
 - (void)animateYankeeFarter:(UIButton *)button;

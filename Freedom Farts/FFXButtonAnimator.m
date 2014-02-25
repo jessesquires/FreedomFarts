@@ -31,6 +31,21 @@
     }];
 }
 
+- (void)animateAmericaTheFart:(UIButton *)button
+{
+    // TODO:
+}
+
+- (void)animateMyFartTisOfThee:(UIButton *)button
+{
+    // TODO:
+}
+
+- (void)animateBattleFarts:(UIButton *)button
+{
+    // TODO:
+}
+
 - (void)animateGodFartAmerica:(UIButton *)button
 {
     [button ffx_stretchForDuration:1.1 repeatCount:14.0f delegate:self completion:^(BOOL finished) {
