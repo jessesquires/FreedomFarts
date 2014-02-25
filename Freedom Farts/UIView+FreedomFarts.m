@@ -72,47 +72,12 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     anim.removedOnCompletion = YES;
     anim.fromValue = [NSNumber numberWithFloat:M_PI * -0.05f];
     anim.toValue = [NSNumber numberWithFloat:M_PI * 0.05f];
-    anim.delegate = delegate;
-    [anim setValue:self forKey:kFFXAnimationKeyView];
     
-    CABasicAnimation *animEnd = [anim copy];
-    animEnd.repeatCount = 1.0f;
-    animEnd.fromValue = nil;
-    animEnd.toValue = [NSNumber numberWithFloat:0.0f];
-    animEnd.autoreverses = NO;
-    animEnd.removedOnCompletion = NO;
-    animEnd.fillMode = kCAFillModeForwards;
-
     if (block) {
-        [animEnd setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+        [anim setValue:block forKey:kFFXAnimationKeyCompletionBlock];
     }
     
-    [anim setValue:^(BOOL finished) {
-        if (finished) {
-            [self.layer addAnimation:animEnd forKey:@"kFFXAnimationKeyWiggleEnd"];
-        }
-        else {
-            [self.layer removeAllAnimations];
-        }
-    }
-            forKey:kFFXAnimationKeyCompletionBlock];
-    
-    CABasicAnimation *animBegin = [animEnd copy];
-    animBegin.repeatCount = 1.0f;
-    animBegin.fromValue = nil;
-    animBegin.toValue = [NSNumber numberWithFloat:[anim.fromValue floatValue]];
-    
-    [animBegin setValue:^(BOOL finished) {
-        if (finished) {
-            [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyWiggleMain"];
-        }
-        else {
-            [self.layer removeAllAnimations];
-        }
-    }
-                 forKey:kFFXAnimationKeyCompletionBlock];
-    
-    [self.layer addAnimation:animBegin forKey:@"kFFXAnimationKeyWiggleBegin"];
+    [self.layer addAnimation:anim forKey:@"kFFXAnimationKeyWiggleBegin"];
 }
 
 - (void)ffx_stretchForDuration:(CFTimeInterval)duration
