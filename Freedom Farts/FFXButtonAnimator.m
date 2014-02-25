@@ -13,14 +13,14 @@
 
 @implementation FFXButtonAnimator
 
-- (void)animateFartSpangledBanner:(UIButton *)button delegate:(id)delegate
+- (void)animateFartSpangledBanner:(UIButton *)button
 {
-    [button ffx_pulseForDuration:0.5 repeatCount:2.0f delegate:delegate completion:^(BOOL finished) {
+    [button ffx_pulseForDuration:0.5 repeatCount:2.0f delegate:self completion:^(BOOL finished) {
         if (finished) {
             double delayInSeconds = 0.18;
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
             dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-                [button ffx_wiggleForDuration:0.62 repeatCount:11.0f delegate:delegate completion:^(BOOL finished) {
+                [button ffx_wiggleForDuration:0.62 repeatCount:11.0f delegate:self completion:^(BOOL finished) {
                     [button.layer removeAllAnimations];
                 }];
             });
@@ -31,18 +31,28 @@
     }];
 }
 
-- (void)animateGodFartAmerica:(UIButton *)button delegate:(id)delegate
+- (void)animateGodFartAmerica:(UIButton *)button
 {
     [button ffx_stretchForDuration:1.1 repeatCount:14.0f delegate:self completion:^(BOOL finished) {
         [button.layer removeAllAnimations];
     }];
 }
 
-- (void)animateYankeeFarter:(UIButton *)button delegate:(id)delegate
+- (void)animateYankeeFarter:(UIButton *)button
 {
     [button ffx_squeezeForDuration:0.33 repeatCount:18.0f delegate:self completion:^(BOOL finished) {
         [button.layer removeAllAnimations];
     }];
+}
+
+#pragma mark - Core animation delegate
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    FFXAnimationCompletionBlock block = [anim valueForKey:kFFXAnimationKeyCompletionBlock];
+    if (block) {
+        block(flag);
+    }
 }
 
 @end

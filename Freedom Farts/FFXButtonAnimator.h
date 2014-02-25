@@ -12,10 +12,10 @@
 
 @interface FFXButtonAnimator : NSObject
 
-- (void)animateFartSpangledBanner:(UIButton *)button delegate:(id)delegate;
+- (void)animateFartSpangledBanner:(UIButton *)button;
 
-- (void)animateGodFartAmerica:(UIButton *)button delegate:(id)delegate;
+- (void)animateGodFartAmerica:(UIButton *)button;
 
-- (void)animateYankeeFarter:(UIButton *)button delegate:(id)delegate;
+- (void)animateYankeeFarter:(UIButton *)button;
 
 @end

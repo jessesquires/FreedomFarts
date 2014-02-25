@@ -164,16 +164,6 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     }
 }
 
-#pragma mark - Core animation delegate
-
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
-    FFXAnimationCompletionBlock block = [anim valueForKey:kFFXAnimationKeyCompletionBlock];
-    if (block) {
-        block(flag);
-    }
-}
-
 #pragma mark - Action sheet delegate
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -217,7 +207,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     switch (button.tag) {
         case 1:
-            [self.buttonAnimator animateFartSpangledBanner:button delegate:self];
+            [self.buttonAnimator animateFartSpangledBanner:button];
             break;
             
         case 2:
@@ -230,11 +220,11 @@ static NSString * const kFFXActionTwitter = @"Twitter";
             break;
             
         case 5:
-            [self.buttonAnimator animateGodFartAmerica:button delegate:self];
+            [self.buttonAnimator animateGodFartAmerica:button];
             break;
             
         case 6:
-            [self.buttonAnimator animateYankeeFarter:button delegate:self];
+            [self.buttonAnimator animateYankeeFarter:button];
             break;
     }
 }
