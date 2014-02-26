@@ -33,7 +33,9 @@
 
 - (void)animateAmericaTheFart:(UIButton *)button
 {
-    // TODO:
+    [button ffx_swayForDuration:0.75 repeatCount:15.0f delegate:self completion:^(BOOL finished) {
+        [button.layer removeAllAnimations];
+    }];
 }
 
 - (void)animateMyFartTisOfThee:(UIButton *)button

@@ -126,4 +126,34 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     [self.layer addAnimation:anim forKey:@"kFFXAnimationKeySqueeze"];
 }
 
+- (void)ffx_swayForDuration:(CFTimeInterval)duration
+                repeatCount:(CGFloat)repeatCount
+                   delegate:(id)delegate
+                 completion:(FFXAnimationCompletionBlock)block
+{
+    CABasicAnimation *rotate = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    rotate.fromValue = [NSNumber numberWithFloat:M_PI * -0.05f];
+    rotate.toValue = [NSNumber numberWithFloat:M_PI * 0.05f];
+    
+    CABasicAnimation *move = [CABasicAnimation animationWithKeyPath:@"position.x"];
+    move.fromValue = [NSNumber numberWithFloat:self.center.x - 25.0f];
+    move.toValue = [NSNumber numberWithFloat:self.center.x + 25.0f];
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = [NSArray arrayWithObjects:rotate, move, nil];
+    group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    group.duration = duration;
+    group.repeatCount = repeatCount;
+    group.autoreverses = YES;
+    group.removedOnCompletion = YES;
+    group.delegate = delegate;
+    [group setValue:self forKey:kFFXAnimationKeyView];
+    
+    if (block) {
+        [group setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+    }
+    
+    [self.layer addAnimation:group forKey:@"kFFXAnimationKeySway"];
+}
+
 @end
