@@ -47,7 +47,20 @@
 
 - (void)animateBattleFarts:(UIButton *)button
 {
-    // TODO:
+    [button ffx_pulseForDuration:0.15 repeatCount:18.5f delegate:self completion:^(BOOL finished) {
+        if (finished) {
+            double delayInSeconds = 0.2;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+                [button ffx_spinForDuration:0.2 repeatCount:88.0 delegate:self completion:^(BOOL finished) {
+                    [button.layer removeAllAnimations];
+                }];
+            });
+        }
+        else {
+            [button.layer removeAllAnimations];
+        }
+    }];
 }
 
 - (void)animateGodFartAmerica:(UIButton *)button

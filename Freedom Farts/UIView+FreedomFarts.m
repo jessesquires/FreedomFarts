@@ -165,4 +165,28 @@ NSString * const kFFXAnimationKeyCompletionBlock = @"kFFXAnimationKeyCompletionB
     [self.layer addAnimation:group forKey:@"kFFXAnimationKeySway"];
 }
 
+- (void)ffx_spinForDuration:(CFTimeInterval)duration
+                repeatCount:(CGFloat)repeatCount
+                   delegate:(id)delegate
+                 completion:(FFXAnimationCompletionBlock)block
+{
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    anim.toValue = [NSNumber numberWithFloat:M_PI * 0.5];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    anim.duration = duration;
+    anim.repeatCount = repeatCount;
+    anim.autoreverses = NO;
+    anim.removedOnCompletion = NO;
+    anim.cumulative = YES;
+    anim.fillMode = kCAFillModeForwards;
+    anim.delegate = delegate;
+    [anim setValue:self forKey:kFFXAnimationKeyView];
+    
+    if (block) {
+        [anim setValue:block forKey:kFFXAnimationKeyCompletionBlock];
+    }
+    
+    [self.layer addAnimation:anim forKey:@"kFFXAnimationKeySpin"];
+}
+
 @end
