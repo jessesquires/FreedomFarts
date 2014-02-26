@@ -18,7 +18,9 @@ typedef void (^FFXAnimationCompletionBlock)(BOOL finished);
 
 @interface UIView (FreedomFarts)
 
-- (void)ffx_fadeToValue:(CGFloat)val delegate:(id)delegate completion:(FFXAnimationCompletionBlock)block;
+- (void)ffx_fadeToValue:(CGFloat)val
+               delegate:(id)delegate
+             completion:(FFXAnimationCompletionBlock)block;
 
 - (void)ffx_pulseForDuration:(CFTimeInterval)duration
                  repeatCount:(CGFloat)repeatCount
@@ -40,9 +42,10 @@ typedef void (^FFXAnimationCompletionBlock)(BOOL finished);
                       delegate:(id)delegate
                     completion:(FFXAnimationCompletionBlock)block;
 
-- (void)ffx_swayForDuration:(CFTimeInterval)duration
-                repeatCount:(CGFloat)repeatCount
-                   delegate:(id)delegate
-                 completion:(FFXAnimationCompletionBlock)block;
+- (void)ffx_swayVertically:(BOOL)vertically
+               forDuration:(CFTimeInterval)duration
+               repeatCount:(CGFloat)repeatCount
+                  delegate:(id)delegate
+                completion:(FFXAnimationCompletionBlock)block;
 
 @end

@@ -33,14 +33,16 @@
 
 - (void)animateAmericaTheFart:(UIButton *)button
 {
-    [button ffx_swayForDuration:0.75 repeatCount:15.0f delegate:self completion:^(BOOL finished) {
+    [button ffx_swayVertically:NO forDuration:0.75 repeatCount:15.0f delegate:self completion:^(BOOL finished) {
         [button.layer removeAllAnimations];
     }];
 }
 
 - (void)animateMyFartTisOfThee:(UIButton *)button
 {
-    // TODO:
+    [button ffx_swayVertically:YES forDuration:0.75 repeatCount:9.0f delegate:self completion:^(BOOL finished) {
+        [button.layer removeAllAnimations];
+    }];
 }
 
 - (void)animateBattleFarts:(UIButton *)button
