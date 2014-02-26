@@ -114,7 +114,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-short" extension:kJSQSystemSoundTypeWAV];
     
-    SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://vote411.org"];
+    SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://www.vote411.org"];
     
     [sender ffx_pulseForDuration:0.15 repeatCount:1.0 delegate:self completion:^(BOOL finished) {
         [self.navigationController pushViewController:vc animated:YES];
@@ -140,7 +140,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (IBAction)hexedBitsPressed:(UIBarButtonItem *)sender
 {
     [[JSQSystemSoundPlayer sharedPlayer] playSoundWithName:@"fart-high" extension:kJSQSystemSoundTypeWAV];
-    SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://hexedbits.com"];
+    SVWebViewController *vc = [[SVWebViewController alloc] initWithAddress:@"http://www.hexedbits.com"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -173,6 +173,16 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     if (motion == UIEventSubtypeMotionShake) {
         [self ffx_stopFarting];
+    }
+}
+
+#pragma mark - Core animation delegate
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    FFXAnimationCompletionBlock block = [anim valueForKey:kFFXAnimationKeyCompletionBlock];
+    if (block) {
+        block(flag);
     }
 }
 
@@ -209,7 +219,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     
     SLComposeViewController *composer = [SLComposeViewController composeViewControllerForServiceType:service];
     [composer setInitialText:@"I've joined the Fart Party! And you can too! #FreedomFartsApp"];
-    [composer addURL:[NSURL URLWithString:@"https://freedomfarts.com"]];
+    [composer addURL:[NSURL URLWithString:@"http://www.freedomfarts.com"]];
     [self presentViewController:composer animated:YES completion:nil];
 }
 
