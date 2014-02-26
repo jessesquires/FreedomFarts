@@ -10,8 +10,8 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString * const kFFXAnimationKeyView;
-extern NSString * const kFFXAnimationKeyCompletionBlock;
+FOUNDATION_EXPORT NSString * const kFFXAnimationKeyView;
+FOUNDATION_EXPORT NSString * const kFFXAnimationKeyCompletionBlock;
 
 typedef void (^FFXAnimationCompletionBlock)(BOOL finished);
 

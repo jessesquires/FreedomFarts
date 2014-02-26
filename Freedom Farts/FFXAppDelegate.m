@@ -21,9 +21,7 @@
                                                            NSFontAttributeName : [UIFont systemFontOfSize:20.0f],
                                                            NSForegroundColorAttributeName : [UIColor whiteColor]
                                                            }];
-    
     [[UIToolbar appearance] setBarTintColor:[UIColor ffx_patrioticBlueColor]];
-    
     return YES;
 }
 
