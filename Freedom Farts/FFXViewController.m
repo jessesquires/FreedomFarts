@@ -272,7 +272,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender
 {
     if (self.isFirstFart && !enabled && sender) {
-        self.navigationItem.prompt = @"shake or tap to stop";
+        self.navigationItem.prompt = @"shake / tap to stop";
         self.isFirstFart = NO;
     }
     else {
