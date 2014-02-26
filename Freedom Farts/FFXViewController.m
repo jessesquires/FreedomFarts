@@ -33,13 +33,17 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 @property (assign, nonatomic) BOOL isFirstFart;
 @property (copy, nonatomic) NSString *currentSound;
 
+- (void)ffx_handleTapGestureRecognizer:(UITapGestureRecognizer *)tap;
+
+- (void)ffx_displaySocialComposerSheetwithService:(NSString *)service;
+
 - (void)ffx_animateFartButton:(UIButton *)button;
+
+- (void)ffx_stopFarting;
 
 - (void)ffx_presentWelcomeView;
 
 - (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender;
-
-- (void)ffx_displaySocialComposerSheetwithService:(NSString *)service;
 
 @end
 
@@ -77,6 +81,12 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     }
     
     self.topSpacingConstraint.constant = [UIDevice ffx_isPhone4Inch] ? 38.0f : 26.0f;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(ffx_handleTapGestureRecognizer:)];
+    tap.numberOfTapsRequired = 1;
+    tap.numberOfTouchesRequired = 1;
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -145,6 +155,13 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     [sheet showFromBarButtonItem:sender animated:YES];
 }
 
+#pragma mark - Gesture recognizers
+
+- (void)ffx_handleTapGestureRecognizer:(UITapGestureRecognizer *)tap
+{
+    [self ffx_stopFarting];
+}
+
 #pragma mark - Shake event
 
 - (BOOL)canBecomeFirstResponder
@@ -154,13 +171,8 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    if (motion == UIEventSubtypeMotionShake && self.currentSound) {
-        [self ffx_toggleButtonsEnabled:YES sender:nil];
-        [[JSQSystemSoundPlayer sharedPlayer] stopSoundWithFilename:self.currentSound];
-        
-        for (BButton *eachBtn in self.buttons) {
-            [eachBtn.layer removeAllAnimations];
-        }
+    if (motion == UIEventSubtypeMotionShake) {
+        [self ffx_stopFarting];
     }
 }
 
@@ -232,6 +244,22 @@ static NSString * const kFFXActionTwitter = @"Twitter";
     }
 }
 
+- (void)ffx_stopFarting
+{
+    if (!self.currentSound) {
+        return;
+    }
+    
+    [self ffx_toggleButtonsEnabled:YES sender:nil];
+    [[JSQSystemSoundPlayer sharedPlayer] stopSoundWithFilename:self.currentSound];
+    
+    for (BButton *eachBtn in self.buttons) {
+        [eachBtn.layer removeAllAnimations];
+    }
+    
+    self.currentSound = nil;
+}
+
 - (void)ffx_presentWelcomeView
 {
     if (self.isFirstLaunch) {
@@ -244,7 +272,7 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 - (void)ffx_toggleButtonsEnabled:(BOOL)enabled sender:(UIButton *)sender
 {
     if (self.isFirstFart && !enabled && sender) {
-        self.navigationItem.prompt = @"shake to stop";
+        self.navigationItem.prompt = @"shake or tap to stop";
         self.isFirstFart = NO;
     }
     else {
