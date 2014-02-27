@@ -229,27 +229,27 @@ static NSString * const kFFXActionTwitter = @"Twitter";
 {
     switch (button.tag) {
         case 1:
-            [self.buttonAnimator animateFartSpangledBanner:button];
+            [self.buttonAnimator animateFartSpangledBanner:button delegate:self];
             break;
             
         case 2:
-            [self.buttonAnimator animateAmericaTheFart:button];
+            [self.buttonAnimator animateAmericaTheFart:button delegate:self];
             break;
             
         case 3:
-            [self.buttonAnimator animateMyFartTisOfThee:button];
+            [self.buttonAnimator animateMyFartTisOfThee:button delegate:self];
             break;
             
         case 4:
-            [self.buttonAnimator animateBattleFarts:button];
+            [self.buttonAnimator animateBattleFarts:button delegate:self];
             break;
             
         case 5:
-            [self.buttonAnimator animateGodFartAmerica:button];
+            [self.buttonAnimator animateGodFartAmerica:button delegate:self];
             break;
             
         case 6:
-            [self.buttonAnimator animateYankeeFarter:button];
+            [self.buttonAnimator animateYankeeFarter:button delegate:self];
             break;
     }
 }
