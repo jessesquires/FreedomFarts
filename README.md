@@ -10,11 +10,13 @@
 
 ## About
 
-Freedom Farts is the politically-themed, satirical fart app for iOS that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012). (*Wasn't that exciting!*) However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)". 
+Freedom Farts is the politically-themed, satirical fart app for iOS that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012). (*Wasn't that exciting!*) However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)".
 
 After rejection, an appeal to the Apple Review Board was submitted immediately but the rejection was upheld. 
 
 I've decided that this app shouldn't simply collect dust on my HDD. So, here it is -- free and open-source. It has since been streamlined and updated for iOS 7.
+
+![icon](https://raw.github.com/hexedbits/FreedomFarts/master/Freedom%20Farts/Images.xcassets/AppIcon.appiconset/Icon-120.png)
 
 ## Why?
 
@@ -23,8 +25,8 @@ Politics has become so absurb in the United States, so I made this app to reflec
 ## Installation
 
 1. Download this repo
-2. Unzip, then build and run in the Xcode simulator
-3. Install on your device if you're a developer
+2. Unzip and open `Freedom Farts.xcworkspace`
+3. Build and run in the Xcode simulator or install on your device if you are a developer
 
 ## Donate
 
