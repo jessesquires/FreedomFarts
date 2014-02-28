@@ -28,11 +28,11 @@ Donate to the Fart Party via [Square Cash](https://square.com/cash). All proceed
 
 ### Credits
 
-Code by [Jesse Squires](https://twitter.com/jesse_squires).
+Code by [Jesse Squires](https://twitter.com/jesse_squires)
 
-Audio by [Zak Denham](http://onebyoneaudio.com).
+Audio by [Zak Denham](http://onebyoneaudio.com)
 
-Icon by [Michael Schultz](http://michaelschultz.com).
+Icon by [Michael Schultz](http://michaelschultz.com)
 
 ### Open-source controls
 
