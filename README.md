@@ -8,7 +8,7 @@
 
 ![screenshot](https://raw.github.com/hexedbits/FreedomFarts/master/Screenshots/Screenshot-1.png)
 
-### About
+## About
 
 Freedom Farts is the politically-themed, satirical fart app for iOS that never was. It was originally submitted to the App Store in October, 2012 -- just in time for the [2012 Presidential Election](http://en.wikipedia.org/wiki/United_States_presidential_election,_2012). (*Wasn't that exciting!*) However, it was rejected by Apple because "[too many fart apps](http://www.engadget.com/2010/09/09/apples-app-store-review-guidelines-we-dont-need-any-more-far/)". 
 
@@ -16,32 +16,36 @@ After rejection, an appeal to the Apple Review Board was submitted immediately b
 
 I've decided that this app shouldn't simply collect dust on my HDD. So, here it is -- free and open-source. It has since been streamlined and updated for iOS 7.
 
-### Why?
+## Why?
 
 Politics has become so absurb in the United States, so I made this app to reflect my distaste, disapproval, disrespect, and disgust for American politics in a humorous way. Also, farts will never be not funny.
 
-### Donate
+## Installation
+
+1. Download this repo
+2. Unzip, then build and run in the Xcode simulator
+3. Install on your device if you're a developer
+
+## Donate
 
 Donate to the Fart Party via [Square Cash](https://square.com/cash). All proceeds support the development of open-source projects by [@jessesquires](http://bit.ly/jsgithub) and [@hexedbits](http://bit.ly/hbgithub).
 
 <h4><a href="mailto:jesse.squires.developer@gmail.com?cc=cash@square.com&subject=$1&body=Thanks for Freedom Farts! I'm joining the Fart Party!">Send $1</a> <em>Join the Fart Party!</em></h4>
 
-### Credits
+## Credits
 
-Code by [Jesse Squires](https://twitter.com/jesse_squires)
+* Code by [Jesse Squires](https://twitter.com/jesse_squires)
+* Audio by [Zak Denham](http://onebyoneaudio.com)
+* Icon by [Michael Schultz](http://michaelschultz.com)
 
-Audio by [Zak Denham](http://onebyoneaudio.com)
-
-Icon by [Michael Schultz](http://michaelschultz.com)
-
-### Open-source controls
+## Open-source controls
 
 * [JSQSystemSoundPlayer](https://github.com/jessesquires/JSQSystemSoundPlayer)
 * [BButton](https://github.com/jessesquires/BButton)
 * [MJPopupViewController](https://github.com/martinjuhasz/MJPopupViewController)
 * [SVWebViewController](https://github.com/samvermette/SVWebViewController)
 
-### [GPL-3.0 License](http://opensource.org/licenses/GPL-3.0)
+## [GPL-3.0 License](http://opensource.org/licenses/GPL-3.0)
 
 Copyright &copy; 2014 Jesse Squires
 
