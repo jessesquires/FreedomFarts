@@ -1,7 +1,6 @@
 # Freedom Farts
 
 *Join the Fart Party! In God, We Fart.*
-
 >Greetings Patriots! Welcome to the **Fart Party** - the one and only **bifartisan** effort to unite patriots from all political **farties**! Fed up with politicians just **farting** around in Washington DC? Can't decide who to vote for in our **two-farty** political system? Tired of feeling like you're stuck between two **farts** that both stink? Don't have the proper **farter** ID? **Fart** it! Join the **Fart Party**.
 
 >Remember to [vote on Election Day](http://www.vote411.org) and if you can't vote, keep **farting** — *it's just as effective!*
@@ -16,7 +15,7 @@ After rejection, an appeal to the Apple Review Board was submitted immediately b
 
 I've decided that this app shouldn't simply collect dust on my HDD. So, here it is -- free and open-source. It has since been streamlined and updated for iOS 7.
 
-![icon](https://raw.github.com/hexedbits/FreedomFarts/master/Freedom%20Farts/Images.xcassets/AppIcon.appiconset/Icon-120.png)
+![icon](https://raw.github.com/hexedbits/FreedomFarts/master/Freedom%20Farts/Images.xcassets/AppIcon.appiconset/Icon-120.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![app store badge](https://raw.githubusercontent.com/hexedbits/FreedomFarts/master/Screenshots/notonappstore.png)
 
 ## Why?
 
