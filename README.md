@@ -39,7 +39,7 @@ Donate to the Fart Party via [Square Cash](https://square.com/cash). All proceed
 * Audio by [Zak Denham](http://onebyoneaudio.com)
 * Icon by [Michael Schultz](http://michaelschultz.com)
 
-## Open-source controls
+## Open-source libraries
 
 * [JSQSystemSoundPlayer](https://github.com/jessesquires/JSQSystemSoundPlayer)
 * [BButton](https://github.com/jessesquires/BButton)
