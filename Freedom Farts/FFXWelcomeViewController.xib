@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFXWelcomeViewController">
@@ -21,7 +21,6 @@
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="4">
                     <rect key="frame" x="20" y="7" width="220" height="144"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="220" id="6No-Bz-KXV"/>
                         <constraint firstAttribute="height" constant="144" id="Er4-vO-vIn"/>
@@ -39,7 +38,6 @@
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="12">
                     <rect key="frame" x="30" y="113" width="200" height="69"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="ICB-c1-vIU"/>
                         <constraint firstAttribute="height" constant="69" id="jlN-ks-4x1"/>
@@ -66,7 +64,6 @@
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="148" translatesAutoresizingMaskIntoConstraints="NO" id="23">
                     <rect key="frame" x="56" y="198" width="148" height="46"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="148" id="Q4Y-07-gUt"/>
                         <constraint firstAttribute="height" constant="46" id="YXZ-ad-Q5B"/>
@@ -84,7 +81,6 @@
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="33">
                     <rect key="frame" x="20" y="252" width="220" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="28" id="gvm-Mn-1Bu"/>
                         <constraint firstAttribute="width" constant="220" id="ohc-YP-lAu"/>
@@ -103,7 +99,6 @@
                 </label>
                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant-color" translatesAutoresizingMaskIntoConstraints="NO" id="sWi-dq-fnV">
                     <rect key="frame" x="102" y="300" width="25" height="25"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="rgX-Q6-VGP"/>
                         <constraint firstAttribute="width" constant="25" id="tOW-Hi-l9f"/>
@@ -111,7 +106,6 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fart-left" translatesAutoresizingMaskIntoConstraints="NO" id="425-ES-6bC">
                     <rect key="frame" x="68" y="295" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ee6-hx-sq3"/>
                         <constraint firstAttribute="width" constant="30" id="phB-KO-8aO"/>
@@ -119,7 +113,6 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donkey-color" translatesAutoresizingMaskIntoConstraints="NO" id="j9z-Ai-Giq">
                     <rect key="frame" x="135" y="300" width="25" height="25"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="IcM-Sk-V8z"/>
                         <constraint firstAttribute="width" constant="25" id="Sgj-KI-OrI"/>
@@ -127,7 +120,6 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fart-right" translatesAutoresizingMaskIntoConstraints="NO" id="Jyz-0t-cc3">
                     <rect key="frame" x="163" y="295" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="PLz-qy-fsd"/>
                         <constraint firstAttribute="height" constant="30" id="Zqh-8p-9do"/>
@@ -153,6 +145,7 @@
                 <constraint firstItem="33" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="v7V-sx-eev"/>
                 <constraint firstAttribute="bottom" secondItem="sWi-dq-fnV" secondAttribute="bottom" constant="15" id="wGe-Lm-e6c"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
@@ -162,4 +155,9 @@
         <image name="fart-left" width="30" height="30"/>
         <image name="fart-right" width="30" height="30"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

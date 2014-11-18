@@ -1,640 +1,1691 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		15BEB5205ED14F1DAECAD84B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C64CE0508C8743EE9C99C0B8 /* libPods.a */; };
-		88353A631874FB7200066E59 /* FFXWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A601874FB7200066E59 /* FFXWelcomeViewController.m */; };
-		88353A641874FB7200066E59 /* FFXWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88353A611874FB7200066E59 /* FFXWelcomeViewController.xib */; };
-		88353A661874FC9600066E59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A651874FC9600066E59 /* QuartzCore.framework */; };
-		88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */; };
-		88353A6C1875105900066E59 /* UIView+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A6B1875105900066E59 /* UIView+FreedomFarts.m */; };
-		88353A711876857100066E59 /* fart-high.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A6D1876857100066E59 /* fart-high.wav */; };
-		88353A721876857100066E59 /* fart-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A6E1876857100066E59 /* fart-long.wav */; };
-		88353A731876857100066E59 /* fart-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A6F1876857100066E59 /* fart-low.wav */; };
-		88353A741876857100066E59 /* fart-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88353A701876857100066E59 /* fart-short.wav */; };
-		88353A761876870A00066E59 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A751876870900066E59 /* Social.framework */; };
-		88353A791876882200066E59 /* UIAlertView+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */; };
-		88353A7C1876A21C00066E59 /* UIImage+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */; };
-		88353A7E1876A41D00066E59 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88353A7D1876A41D00066E59 /* Accelerate.framework */; };
-		885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */; };
-		887A87DA18837CCA000ED7A9 /* FFXButtonAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 887A87D918837CCA000ED7A9 /* FFXButtonAnimator.m */; };
-		88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
-		88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDC186CBF85001FC35E /* CoreGraphics.framework */; };
-		88F86EDF186CBF85001FC35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDE186CBF85001FC35E /* UIKit.framework */; };
-		88F86EE5186CBF85001FC35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EE3186CBF85001FC35E /* InfoPlist.strings */; };
-		88F86EE7186CBF85001FC35E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86EE6186CBF85001FC35E /* main.m */; };
-		88F86EEB186CBF85001FC35E /* FFXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */; };
-		88F86EEE186CBF85001FC35E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EEC186CBF85001FC35E /* Main.storyboard */; };
-		88F86EF4186CBF85001FC35E /* FFXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86EF3186CBF85001FC35E /* FFXViewController.m */; };
-		88F86EF6186CBF85001FC35E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F86EF5186CBF85001FC35E /* Images.xcassets */; };
-		88F86EFD186CBF85001FC35E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EFC186CBF85001FC35E /* XCTest.framework */; };
-		88F86EFE186CBF85001FC35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDA186CBF85001FC35E /* Foundation.framework */; };
-		88F86EFF186CBF85001FC35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F86EDE186CBF85001FC35E /* UIKit.framework */; };
-		88F86F07186CBF85001FC35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F05186CBF85001FC35E /* InfoPlist.strings */; };
-		88F86F09186CBF85001FC35E /* Freedom_FartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F86F08186CBF85001FC35E /* Freedom_FartsTests.m */; };
-		88F86F19186CE600001FC35E /* america the fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F13186CE600001FC35E /* america the fart.wav */; };
-		88F86F1A186CE600001FC35E /* battle farts of the republic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F14186CE600001FC35E /* battle farts of the republic.wav */; };
-		88F86F1B186CE600001FC35E /* fart spangled banner.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F15186CE600001FC35E /* fart spangled banner.wav */; };
-		88F86F1C186CE600001FC35E /* god fart america.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F16186CE600001FC35E /* god fart america.wav */; };
-		88F86F1D186CE600001FC35E /* my fart tis of thee.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F17186CE600001FC35E /* my fart tis of thee.wav */; };
-		88F86F1E186CE600001FC35E /* yankee farter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88F86F18186CE600001FC35E /* yankee farter.wav */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		88F86F00186CBF85001FC35E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88F86ECF186CBF85001FC35E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88F86ED6186CBF85001FC35E;
-			remoteInfo = "Freedom Farts";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		06E9FE680E5E4C6BB49682EE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		88353A601874FB7200066E59 /* FFXWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFXWelcomeViewController.m; sourceTree = "<group>"; };
-		88353A611874FB7200066E59 /* FFXWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FFXWelcomeViewController.xib; sourceTree = "<group>"; };
-		88353A621874FB7200066E59 /* FFXWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFXWelcomeViewController.h; sourceTree = "<group>"; };
-		88353A651874FC9600066E59 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		88353A6718750C0D00066E59 /* UIDevice+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FreedomFarts.h"; sourceTree = "<group>"; };
-		88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FreedomFarts.m"; sourceTree = "<group>"; };
-		88353A6A1875105900066E59 /* UIView+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FreedomFarts.h"; sourceTree = "<group>"; };
-		88353A6B1875105900066E59 /* UIView+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FreedomFarts.m"; sourceTree = "<group>"; };
-		88353A6D1876857100066E59 /* fart-high.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-high.wav"; sourceTree = "<group>"; };
-		88353A6E1876857100066E59 /* fart-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-long.wav"; sourceTree = "<group>"; };
-		88353A6F1876857100066E59 /* fart-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-low.wav"; sourceTree = "<group>"; };
-		88353A701876857100066E59 /* fart-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-short.wav"; sourceTree = "<group>"; };
-		88353A751876870900066E59 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		88353A771876882200066E59 /* UIAlertView+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+FreedomFarts.h"; sourceTree = "<group>"; };
-		88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+FreedomFarts.m"; sourceTree = "<group>"; };
-		88353A7A1876A21C00066E59 /* UIImage+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FreedomFarts.h"; sourceTree = "<group>"; };
-		88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FreedomFarts.m"; sourceTree = "<group>"; };
-		88353A7D1876A41D00066E59 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FreedomFarts.h"; sourceTree = "<group>"; };
-		8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FreedomFarts.m"; sourceTree = "<group>"; };
-		887A87D818837CCA000ED7A9 /* FFXButtonAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFXButtonAnimator.h; sourceTree = "<group>"; };
-		887A87D918837CCA000ED7A9 /* FFXButtonAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFXButtonAnimator.m; sourceTree = "<group>"; };
-		88F86ED7186CBF85001FC35E /* Freedom Farts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freedom Farts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F86EDA186CBF85001FC35E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		88F86EDC186CBF85001FC35E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		88F86EDE186CBF85001FC35E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		88F86EE2186CBF85001FC35E /* Freedom Farts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freedom Farts-Info.plist"; sourceTree = "<group>"; };
-		88F86EE4186CBF85001FC35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88F86EE6186CBF85001FC35E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88F86EE8186CBF85001FC35E /* Freedom Farts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Freedom Farts-Prefix.pch"; sourceTree = "<group>"; };
-		88F86EE9186CBF85001FC35E /* FFXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFXAppDelegate.h; sourceTree = "<group>"; };
-		88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFXAppDelegate.m; sourceTree = "<group>"; };
-		88F86EED186CBF85001FC35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88F86EF2186CBF85001FC35E /* FFXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFXViewController.h; sourceTree = "<group>"; };
-		88F86EF3186CBF85001FC35E /* FFXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFXViewController.m; sourceTree = "<group>"; };
-		88F86EF5186CBF85001FC35E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		88F86EFB186CBF85001FC35E /* Freedom FartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Freedom FartsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F86EFC186CBF85001FC35E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		88F86F04186CBF85001FC35E /* Freedom FartsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freedom FartsTests-Info.plist"; sourceTree = "<group>"; };
-		88F86F06186CBF85001FC35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88F86F08186CBF85001FC35E /* Freedom_FartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Freedom_FartsTests.m; sourceTree = "<group>"; };
-		88F86F13186CE600001FC35E /* america the fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "america the fart.wav"; sourceTree = "<group>"; };
-		88F86F14186CE600001FC35E /* battle farts of the republic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "battle farts of the republic.wav"; sourceTree = "<group>"; };
-		88F86F15186CE600001FC35E /* fart spangled banner.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart spangled banner.wav"; sourceTree = "<group>"; };
-		88F86F16186CE600001FC35E /* god fart america.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "god fart america.wav"; sourceTree = "<group>"; };
-		88F86F17186CE600001FC35E /* my fart tis of thee.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "my fart tis of thee.wav"; sourceTree = "<group>"; };
-		88F86F18186CE600001FC35E /* yankee farter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "yankee farter.wav"; sourceTree = "<group>"; };
-		C64CE0508C8743EE9C99C0B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		88F86ED4186CBF85001FC35E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88353A7E1876A41D00066E59 /* Accelerate.framework in Frameworks */,
-				88353A761876870A00066E59 /* Social.framework in Frameworks */,
-				88353A661874FC9600066E59 /* QuartzCore.framework in Frameworks */,
-				88F86EDD186CBF85001FC35E /* CoreGraphics.framework in Frameworks */,
-				88F86EDF186CBF85001FC35E /* UIKit.framework in Frameworks */,
-				88F86EDB186CBF85001FC35E /* Foundation.framework in Frameworks */,
-				15BEB5205ED14F1DAECAD84B /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88F86EF8186CBF85001FC35E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86EFD186CBF85001FC35E /* XCTest.framework in Frameworks */,
-				88F86EFF186CBF85001FC35E /* UIKit.framework in Frameworks */,
-				88F86EFE186CBF85001FC35E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		88F86ECE186CBF85001FC35E = {
-			isa = PBXGroup;
-			children = (
-				88F86EE0186CBF85001FC35E /* Freedom Farts */,
-				88F86F02186CBF85001FC35E /* Freedom FartsTests */,
-				88F86ED9186CBF85001FC35E /* Frameworks */,
-				88F86ED8186CBF85001FC35E /* Products */,
-				06E9FE680E5E4C6BB49682EE /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		88F86ED8186CBF85001FC35E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				88F86ED7186CBF85001FC35E /* Freedom Farts.app */,
-				88F86EFB186CBF85001FC35E /* Freedom FartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		88F86ED9186CBF85001FC35E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				88353A7D1876A41D00066E59 /* Accelerate.framework */,
-				88F86EDC186CBF85001FC35E /* CoreGraphics.framework */,
-				88F86EDA186CBF85001FC35E /* Foundation.framework */,
-				C64CE0508C8743EE9C99C0B8 /* libPods.a */,
-				88353A651874FC9600066E59 /* QuartzCore.framework */,
-				88353A751876870900066E59 /* Social.framework */,
-				88F86EDE186CBF85001FC35E /* UIKit.framework */,
-				88F86EFC186CBF85001FC35E /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		88F86EE0186CBF85001FC35E /* Freedom Farts */ = {
-			isa = PBXGroup;
-			children = (
-				88F86EE9186CBF85001FC35E /* FFXAppDelegate.h */,
-				88F86EEA186CBF85001FC35E /* FFXAppDelegate.m */,
-				887A87D818837CCA000ED7A9 /* FFXButtonAnimator.h */,
-				887A87D918837CCA000ED7A9 /* FFXButtonAnimator.m */,
-				88F86EF2186CBF85001FC35E /* FFXViewController.h */,
-				88F86EF3186CBF85001FC35E /* FFXViewController.m */,
-				88353A621874FB7200066E59 /* FFXWelcomeViewController.h */,
-				88353A601874FB7200066E59 /* FFXWelcomeViewController.m */,
-				88353A611874FB7200066E59 /* FFXWelcomeViewController.xib */,
-				88F86EF5186CBF85001FC35E /* Images.xcassets */,
-				88F86EEC186CBF85001FC35E /* Main.storyboard */,
-				88F86F12186CE600001FC35E /* Sounds */,
-				88F86EE1186CBF85001FC35E /* Supporting Files */,
-				88353A771876882200066E59 /* UIAlertView+FreedomFarts.h */,
-				88353A781876882200066E59 /* UIAlertView+FreedomFarts.m */,
-				8855999E186E14C600E310DD /* UIColor+FreedomFarts.h */,
-				8855999F186E14C600E310DD /* UIColor+FreedomFarts.m */,
-				88353A6718750C0D00066E59 /* UIDevice+FreedomFarts.h */,
-				88353A6818750C0D00066E59 /* UIDevice+FreedomFarts.m */,
-				88353A7A1876A21C00066E59 /* UIImage+FreedomFarts.h */,
-				88353A7B1876A21C00066E59 /* UIImage+FreedomFarts.m */,
-				88353A6A1875105900066E59 /* UIView+FreedomFarts.h */,
-				88353A6B1875105900066E59 /* UIView+FreedomFarts.m */,
-			);
-			path = "Freedom Farts";
-			sourceTree = "<group>";
-		};
-		88F86EE1186CBF85001FC35E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88F86EE2186CBF85001FC35E /* Freedom Farts-Info.plist */,
-				88F86EE3186CBF85001FC35E /* InfoPlist.strings */,
-				88F86EE6186CBF85001FC35E /* main.m */,
-				88F86EE8186CBF85001FC35E /* Freedom Farts-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88F86F02186CBF85001FC35E /* Freedom FartsTests */ = {
-			isa = PBXGroup;
-			children = (
-				88F86F08186CBF85001FC35E /* Freedom_FartsTests.m */,
-				88F86F03186CBF85001FC35E /* Supporting Files */,
-			);
-			path = "Freedom FartsTests";
-			sourceTree = "<group>";
-		};
-		88F86F03186CBF85001FC35E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88F86F04186CBF85001FC35E /* Freedom FartsTests-Info.plist */,
-				88F86F05186CBF85001FC35E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88F86F12186CE600001FC35E /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				88353A6D1876857100066E59 /* fart-high.wav */,
-				88353A6E1876857100066E59 /* fart-long.wav */,
-				88353A6F1876857100066E59 /* fart-low.wav */,
-				88353A701876857100066E59 /* fart-short.wav */,
-				88F86F13186CE600001FC35E /* america the fart.wav */,
-				88F86F14186CE600001FC35E /* battle farts of the republic.wav */,
-				88F86F15186CE600001FC35E /* fart spangled banner.wav */,
-				88F86F16186CE600001FC35E /* god fart america.wav */,
-				88F86F17186CE600001FC35E /* my fart tis of thee.wav */,
-				88F86F18186CE600001FC35E /* yankee farter.wav */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		88F86ED6186CBF85001FC35E /* Freedom Farts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88F86F0C186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom Farts" */;
-			buildPhases = (
-				353BE2BA028148FA88E8360D /* Check Pods Manifest.lock */,
-				88F86ED3186CBF85001FC35E /* Sources */,
-				88F86ED4186CBF85001FC35E /* Frameworks */,
-				88F86ED5186CBF85001FC35E /* Resources */,
-				DCFBD318ED15448EB995809C /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Freedom Farts";
-			productName = "Freedom Farts";
-			productReference = 88F86ED7186CBF85001FC35E /* Freedom Farts.app */;
-			productType = "com.apple.product-type.application";
-		};
-		88F86EFA186CBF85001FC35E /* Freedom FartsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88F86F0F186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom FartsTests" */;
-			buildPhases = (
-				88F86EF7186CBF85001FC35E /* Sources */,
-				88F86EF8186CBF85001FC35E /* Frameworks */,
-				88F86EF9186CBF85001FC35E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				88F86F01186CBF85001FC35E /* PBXTargetDependency */,
-			);
-			name = "Freedom FartsTests";
-			productName = "Freedom FartsTests";
-			productReference = 88F86EFB186CBF85001FC35E /* Freedom FartsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		88F86ECF186CBF85001FC35E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = FFX;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Hexed Bits";
-				TargetAttributes = {
-					88F86ED6186CBF85001FC35E = {
-						DevelopmentTeam = 5VRJU68BZ5;
-					};
-					88F86EFA186CBF85001FC35E = {
-						TestTargetID = 88F86ED6186CBF85001FC35E;
-					};
-				};
-			};
-			buildConfigurationList = 88F86ED2186CBF85001FC35E /* Build configuration list for PBXProject "Freedom Farts" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 88F86ECE186CBF85001FC35E;
-			productRefGroup = 88F86ED8186CBF85001FC35E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				88F86ED6186CBF85001FC35E /* Freedom Farts */,
-				88F86EFA186CBF85001FC35E /* Freedom FartsTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		88F86ED5186CBF85001FC35E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88353A741876857100066E59 /* fart-short.wav in Resources */,
-				88F86F1A186CE600001FC35E /* battle farts of the republic.wav in Resources */,
-				88F86F1C186CE600001FC35E /* god fart america.wav in Resources */,
-				88F86F19186CE600001FC35E /* america the fart.wav in Resources */,
-				88353A721876857100066E59 /* fart-long.wav in Resources */,
-				88353A641874FB7200066E59 /* FFXWelcomeViewController.xib in Resources */,
-				88F86EF6186CBF85001FC35E /* Images.xcassets in Resources */,
-				88353A711876857100066E59 /* fart-high.wav in Resources */,
-				88F86F1D186CE600001FC35E /* my fart tis of thee.wav in Resources */,
-				88F86EEE186CBF85001FC35E /* Main.storyboard in Resources */,
-				88F86EE5186CBF85001FC35E /* InfoPlist.strings in Resources */,
-				88F86F1E186CE600001FC35E /* yankee farter.wav in Resources */,
-				88353A731876857100066E59 /* fart-low.wav in Resources */,
-				88F86F1B186CE600001FC35E /* fart spangled banner.wav in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88F86EF9186CBF85001FC35E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86F07186CBF85001FC35E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		353BE2BA028148FA88E8360D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DCFBD318ED15448EB995809C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		88F86ED3186CBF85001FC35E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88353A631874FB7200066E59 /* FFXWelcomeViewController.m in Sources */,
-				88F86EF4186CBF85001FC35E /* FFXViewController.m in Sources */,
-				88F86EE7186CBF85001FC35E /* main.m in Sources */,
-				88353A791876882200066E59 /* UIAlertView+FreedomFarts.m in Sources */,
-				88F86EEB186CBF85001FC35E /* FFXAppDelegate.m in Sources */,
-				88353A6C1875105900066E59 /* UIView+FreedomFarts.m in Sources */,
-				885599A0186E14C600E310DD /* UIColor+FreedomFarts.m in Sources */,
-				88353A7C1876A21C00066E59 /* UIImage+FreedomFarts.m in Sources */,
-				88353A6918750C0D00066E59 /* UIDevice+FreedomFarts.m in Sources */,
-				887A87DA18837CCA000ED7A9 /* FFXButtonAnimator.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88F86EF7186CBF85001FC35E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88F86F09186CBF85001FC35E /* Freedom_FartsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		88F86F01186CBF85001FC35E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 88F86ED6186CBF85001FC35E /* Freedom Farts */;
-			targetProxy = 88F86F00186CBF85001FC35E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		88F86EE3186CBF85001FC35E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86EE4186CBF85001FC35E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		88F86EEC186CBF85001FC35E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86EED186CBF85001FC35E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		88F86F05186CBF85001FC35E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F86F06186CBF85001FC35E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		88F86F0A186CBF85001FC35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		88F86F0B186CBF85001FC35E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		88F86F0D186CBF85001FC35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E9FE680E5E4C6BB49682EE /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				INFOPLIST_FILE = "Freedom Farts/Freedom Farts-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "619CB992-09BF-434E-8974-8EFEB2D4F2F5";
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		88F86F0E186CBF85001FC35E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E9FE680E5E4C6BB49682EE /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				INFOPLIST_FILE = "Freedom Farts/Freedom Farts-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "619CB992-09BF-434E-8974-8EFEB2D4F2F5";
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		88F86F10186CBF85001FC35E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Freedom FartsTests/Freedom FartsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		88F86F11186CBF85001FC35E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Freedom Farts/Freedom Farts-Prefix.pch";
-				INFOPLIST_FILE = "Freedom FartsTests/Freedom FartsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		88F86ED2186CBF85001FC35E /* Build configuration list for PBXProject "Freedom Farts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88F86F0A186CBF85001FC35E /* Debug */,
-				88F86F0B186CBF85001FC35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88F86F0C186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom Farts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88F86F0D186CBF85001FC35E /* Debug */,
-				88F86F0E186CBF85001FC35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88F86F0F186CBF85001FC35E /* Build configuration list for PBXNativeTarget "Freedom FartsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88F86F10186CBF85001FC35E /* Debug */,
-				88F86F11186CBF85001FC35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 88F86ECF186CBF85001FC35E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>15BEB5205ED14F1DAECAD84B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C64CE0508C8743EE9C99C0B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>22AB33D0915F85F512BEE54E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>90ED55163D4513D78AAA4832</string>
+				<string>DA55AC3E96AAEF65EE0AF6F9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>353BE2BA028148FA88E8360D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>88353A601874FB7200066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FFXWelcomeViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A611874FB7200066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>FFXWelcomeViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A621874FB7200066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FFXWelcomeViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A631874FB7200066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A601874FB7200066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A641874FB7200066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A611874FB7200066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A651874FC9600066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88353A661874FC9600066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A651874FC9600066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A6718750C0D00066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIDevice+FreedomFarts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A6818750C0D00066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIDevice+FreedomFarts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A6918750C0D00066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A6818750C0D00066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A6A1875105900066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+FreedomFarts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A6B1875105900066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+FreedomFarts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A6C1875105900066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A6B1875105900066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A6D1876857100066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>fart-high.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A6E1876857100066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>fart-long.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A6F1876857100066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>fart-low.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A701876857100066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>fart-short.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A711876857100066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A6D1876857100066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A721876857100066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A6E1876857100066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A731876857100066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A6F1876857100066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A741876857100066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A701876857100066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A751876870900066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Social.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Social.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88353A761876870A00066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A751876870900066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A771876882200066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIAlertView+FreedomFarts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A781876882200066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIAlertView+FreedomFarts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A791876882200066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A781876882200066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A7A1876A21C00066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImage+FreedomFarts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A7B1876A21C00066E59</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImage+FreedomFarts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88353A7C1876A21C00066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A7B1876A21C00066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88353A7D1876A41D00066E59</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Accelerate.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Accelerate.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88353A7E1876A41D00066E59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88353A7D1876A41D00066E59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8855999E186E14C600E310DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIColor+FreedomFarts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8855999F186E14C600E310DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIColor+FreedomFarts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>885599A0186E14C600E310DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8855999F186E14C600E310DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>887A87D818837CCA000ED7A9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FFXButtonAnimator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>887A87D918837CCA000ED7A9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FFXButtonAnimator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>887A87DA18837CCA000ED7A9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>887A87D918837CCA000ED7A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86ECE186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE0186CBF85001FC35E</string>
+				<string>88F86F02186CBF85001FC35E</string>
+				<string>88F86ED9186CBF85001FC35E</string>
+				<string>88F86ED8186CBF85001FC35E</string>
+				<string>22AB33D0915F85F512BEE54E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86ECF186CBF85001FC35E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>FFX</string>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Hexed Bits</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>88F86ED6186CBF85001FC35E</key>
+					<dict>
+						<key>DevelopmentTeam</key>
+						<string>5VRJU68BZ5</string>
+					</dict>
+					<key>88F86EFA186CBF85001FC35E</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>88F86ED6186CBF85001FC35E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>88F86ED2186CBF85001FC35E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>88F86ECE186CBF85001FC35E</string>
+			<key>productRefGroup</key>
+			<string>88F86ED8186CBF85001FC35E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>88F86ED6186CBF85001FC35E</string>
+				<string>88F86EFA186CBF85001FC35E</string>
+			</array>
+		</dict>
+		<key>88F86ED2186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88F86F0A186CBF85001FC35E</string>
+				<string>88F86F0B186CBF85001FC35E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88F86ED3186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88353A631874FB7200066E59</string>
+				<string>88F86EF4186CBF85001FC35E</string>
+				<string>88F86EE7186CBF85001FC35E</string>
+				<string>88353A791876882200066E59</string>
+				<string>88F86EEB186CBF85001FC35E</string>
+				<string>88353A6C1875105900066E59</string>
+				<string>885599A0186E14C600E310DD</string>
+				<string>88353A7C1876A21C00066E59</string>
+				<string>88353A6918750C0D00066E59</string>
+				<string>887A87DA18837CCA000ED7A9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ED4186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88353A7E1876A41D00066E59</string>
+				<string>88353A761876870A00066E59</string>
+				<string>88353A661874FC9600066E59</string>
+				<string>88F86EDD186CBF85001FC35E</string>
+				<string>88F86EDF186CBF85001FC35E</string>
+				<string>88F86EDB186CBF85001FC35E</string>
+				<string>15BEB5205ED14F1DAECAD84B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ED5186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88353A741876857100066E59</string>
+				<string>88F86F1A186CE600001FC35E</string>
+				<string>88F86F1C186CE600001FC35E</string>
+				<string>88F86F19186CE600001FC35E</string>
+				<string>88353A721876857100066E59</string>
+				<string>88353A641874FB7200066E59</string>
+				<string>88F86EF6186CBF85001FC35E</string>
+				<string>88353A711876857100066E59</string>
+				<string>88F86F1D186CE600001FC35E</string>
+				<string>88F86EEE186CBF85001FC35E</string>
+				<string>88F86EE5186CBF85001FC35E</string>
+				<string>88F86F1E186CE600001FC35E</string>
+				<string>88353A731876857100066E59</string>
+				<string>88F86F1B186CE600001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86ED6186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>88F86F0C186CBF85001FC35E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>353BE2BA028148FA88E8360D</string>
+				<string>88F86ED3186CBF85001FC35E</string>
+				<string>88F86ED4186CBF85001FC35E</string>
+				<string>88F86ED5186CBF85001FC35E</string>
+				<string>DCFBD318ED15448EB995809C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Freedom Farts</string>
+			<key>productName</key>
+			<string>Freedom Farts</string>
+			<key>productReference</key>
+			<string>88F86ED7186CBF85001FC35E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>88F86ED7186CBF85001FC35E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Freedom Farts.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>88F86ED8186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86ED7186CBF85001FC35E</string>
+				<string>88F86EFB186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86ED9186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88353A7D1876A41D00066E59</string>
+				<string>88F86EDC186CBF85001FC35E</string>
+				<string>88F86EDA186CBF85001FC35E</string>
+				<string>C64CE0508C8743EE9C99C0B8</string>
+				<string>88353A651874FC9600066E59</string>
+				<string>88353A751876870900066E59</string>
+				<string>88F86EDE186CBF85001FC35E</string>
+				<string>88F86EFC186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EDA186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88F86EDB186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDA186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EDC186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88F86EDD186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDC186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EDE186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88F86EDF186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDE186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EE0186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE9186CBF85001FC35E</string>
+				<string>88F86EEA186CBF85001FC35E</string>
+				<string>887A87D818837CCA000ED7A9</string>
+				<string>887A87D918837CCA000ED7A9</string>
+				<string>88F86EF2186CBF85001FC35E</string>
+				<string>88F86EF3186CBF85001FC35E</string>
+				<string>88353A621874FB7200066E59</string>
+				<string>88353A601874FB7200066E59</string>
+				<string>88353A611874FB7200066E59</string>
+				<string>88F86EF5186CBF85001FC35E</string>
+				<string>88F86EEC186CBF85001FC35E</string>
+				<string>88F86F12186CE600001FC35E</string>
+				<string>88F86EE1186CBF85001FC35E</string>
+				<string>88353A771876882200066E59</string>
+				<string>88353A781876882200066E59</string>
+				<string>8855999E186E14C600E310DD</string>
+				<string>8855999F186E14C600E310DD</string>
+				<string>88353A6718750C0D00066E59</string>
+				<string>88353A6818750C0D00066E59</string>
+				<string>88353A7A1876A21C00066E59</string>
+				<string>88353A7B1876A21C00066E59</string>
+				<string>88353A6A1875105900066E59</string>
+				<string>88353A6B1875105900066E59</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Freedom Farts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE1186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE2186CBF85001FC35E</string>
+				<string>88F86EE3186CBF85001FC35E</string>
+				<string>88F86EE6186CBF85001FC35E</string>
+				<string>88F86EE8186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE2186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Freedom Farts-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE3186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EE4186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE4186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE5186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EE3186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EE6186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE7186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EE6186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EE8186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Freedom Farts-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EE9186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FFXAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EEA186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FFXAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EEB186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EEA186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EEC186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86EED186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EED186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EEE186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EEC186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EF2186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FFXViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF3186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FFXViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF4186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EF3186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EF5186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86EF6186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EF5186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EF7186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86F09186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86EF8186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86EFD186CBF85001FC35E</string>
+				<string>88F86EFF186CBF85001FC35E</string>
+				<string>88F86EFE186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86EF9186CBF85001FC35E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88F86F07186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88F86EFA186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>88F86F0F186CBF85001FC35E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>88F86EF7186CBF85001FC35E</string>
+				<string>88F86EF8186CBF85001FC35E</string>
+				<string>88F86EF9186CBF85001FC35E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>88F86F01186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Freedom FartsTests</string>
+			<key>productName</key>
+			<string>Freedom FartsTests</string>
+			<key>productReference</key>
+			<string>88F86EFB186CBF85001FC35E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>88F86EFB186CBF85001FC35E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Freedom FartsTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>88F86EFC186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>88F86EFD186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EFC186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EFE186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDA186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86EFF186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86EDE186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F00186CBF85001FC35E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>88F86ECF186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>88F86ED6186CBF85001FC35E</string>
+			<key>remoteInfo</key>
+			<string>Freedom Farts</string>
+		</dict>
+		<key>88F86F01186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>88F86ED6186CBF85001FC35E</string>
+			<key>targetProxy</key>
+			<string>88F86F00186CBF85001FC35E</string>
+		</dict>
+		<key>88F86F02186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86F08186CBF85001FC35E</string>
+				<string>88F86F03186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Freedom FartsTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F03186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86F04186CBF85001FC35E</string>
+				<string>88F86F05186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F04186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Freedom FartsTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F05186CBF85001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F86F06186CBF85001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F06186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F07186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F05186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F08186CBF85001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Freedom_FartsTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F09186CBF85001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F08186CBF85001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F0A186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88F86F0B186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88F86F0C186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88F86F0D186CBF85001FC35E</string>
+				<string>88F86F0E186CBF85001FC35E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88F86F0D186CBF85001FC35E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>90ED55163D4513D78AAA4832</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom Farts/Freedom Farts-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string>619CB992-09BF-434E-8974-8EFEB2D4F2F5</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88F86F0E186CBF85001FC35E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DA55AC3E96AAEF65EE0AF6F9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom Farts/Freedom Farts-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string>619CB992-09BF-434E-8974-8EFEB2D4F2F5</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88F86F0F186CBF85001FC35E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88F86F10186CBF85001FC35E</string>
+				<string>88F86F11186CBF85001FC35E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88F86F10186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom FartsTests/Freedom FartsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88F86F11186CBF85001FC35E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Freedom Farts.app/Freedom Farts</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Freedom Farts/Freedom Farts-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Freedom FartsTests/Freedom FartsTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88F86F12186CE600001FC35E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88353A6D1876857100066E59</string>
+				<string>88353A6E1876857100066E59</string>
+				<string>88353A6F1876857100066E59</string>
+				<string>88353A701876857100066E59</string>
+				<string>88F86F13186CE600001FC35E</string>
+				<string>88F86F14186CE600001FC35E</string>
+				<string>88F86F15186CE600001FC35E</string>
+				<string>88F86F16186CE600001FC35E</string>
+				<string>88F86F17186CE600001FC35E</string>
+				<string>88F86F18186CE600001FC35E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Sounds</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F13186CE600001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>america the fart.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F14186CE600001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>battle farts of the republic.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F15186CE600001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>fart spangled banner.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F16186CE600001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>god fart america.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F17186CE600001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>my fart tis of thee.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F18186CE600001FC35E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>yankee farter.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F86F19186CE600001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F13186CE600001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F1A186CE600001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F14186CE600001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F1B186CE600001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F15186CE600001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F1C186CE600001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F16186CE600001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F1D186CE600001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F17186CE600001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88F86F1E186CE600001FC35E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88F86F18186CE600001FC35E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>90ED55163D4513D78AAA4832</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C64CE0508C8743EE9C99C0B8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DA55AC3E96AAEF65EE0AF6F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DCFBD318ED15448EB995809C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>88F86ECF186CBF85001FC35E</string>
+</dict>
+</plist>
