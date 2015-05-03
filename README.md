@@ -1,4 +1,4 @@
-## freedomfarts-site
+# FreedomFarts gh-pages
 
 [hexedbits.github.io/FreedomFarts](http://hexedbits.github.io/FreedomFarts/)
 
