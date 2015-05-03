@@ -12,7 +12,7 @@ html {
 
 body {
 	background-color: #bcccdc;
-	background-image:url('/img/capitol2-blur.jpg');
+	background-image:url('img/capitol2-blur.jpg');
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-attachment: scroll;
