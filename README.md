@@ -1,6 +1,6 @@
 ## freedomfarts-site
 
-[freedomfarts.com](http://www.freedomfarts.com)
+[hexedbits.github.io/FreedomFarts](http://hexedbits.github.io/FreedomFarts/)
 
 ![icon](http://raw.github.com/hexedbits/freedomfarts-site/master/ico/icon120.png)
 
