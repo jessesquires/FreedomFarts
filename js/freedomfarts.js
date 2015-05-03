@@ -47,7 +47,7 @@ function addAudioSources(title) {
 
 function addAudioSourceType(srcid, title, ext) {
 	var src = $(srcid);
-	src.attr('src', '../audio/' + title + '.' + ext);
+	src.attr('src', 'audio/' + title + '.' + ext);
 }
 
 function onLoad() {
