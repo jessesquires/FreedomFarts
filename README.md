@@ -27,12 +27,6 @@ Politics has become so absurb in the United States, so I made this app to reflec
 2. Unzip and open `Freedom Farts.xcworkspace`
 3. Build and run in the Xcode simulator or install on your device if you are a developer
 
-## Donate
-
-Donate to the Fart Party via [Square Cash](https://square.com/cash). All proceeds support the development of open-source projects by [@jessesquires](http://bit.ly/jsgithub) and [@hexedbits](http://bit.ly/hbgithub).
-
-<h4><a href="mailto:jesse.squires.developer@gmail.com?cc=cash@square.com&subject=$1&body=Thanks for Freedom Farts! I'm joining the Fart Party!">Send $1</a> <em>Join the Fart Party!</em></h4>
-
 ## Credits
 
 * Code by [Jesse Squires](https://twitter.com/jesse_squires)
