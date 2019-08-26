@@ -1,8 +1,8 @@
 # FreedomFarts gh-pages
 
-[hexedbits.github.io/FreedomFarts](http://hexedbits.github.io/FreedomFarts/)
+https://jessesquires.github.io/FreedomFarts/
 
-![icon](https://raw.githubusercontent.com/hexedbits/FreedomFarts/gh-pages/ico/icon120.png)
+![icon](https://raw.githubusercontent.com/jessesquires/FreedomFarts/gh-pages/ico/icon120.png)
 
 ## License
 
